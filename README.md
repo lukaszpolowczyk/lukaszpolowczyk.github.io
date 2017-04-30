@@ -1,3 +1,3 @@
 # lukaszpolowczyk.github.io
 
-Łukasz Polowczyk page
+Łukasz Polowczyk
