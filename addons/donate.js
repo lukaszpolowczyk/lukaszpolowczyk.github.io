@@ -9,6 +9,15 @@ const currencySwitchEl = donatePanelEl.querySelector(".currency-switch");
 
 const paypalSumEls = donatePanelEl.querySelectorAll(".paypal-sum");
 
+var qrcodePP = new QRCode(donatePanelEl.querySelector(".qrcode_image"), {
+    text: "test",
+    width: 170,
+    height: 170,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+
 const refreshDonateButton = ()=> {
 	const value = donateThisSumEl.getAttribute("value");
 	const curr = currencySwitchEl.getAttribute("data-curr");
@@ -29,6 +38,10 @@ const refreshDonateButton = ()=> {
 
 	//const value = paypalSumSelEl.getAttribute("value");
 	donateThisSumEl.textContent = `Donate ${currChar}${value}${mth}`;
+	
+	qrcodePP.makeCode(url);
+	const img = donatePanelEl.querySelector(".qrcode_image").src;
+	donatePanelEl.querySelector(".qrcode_image").style.backgroundImage = img;
 };
 
 
@@ -96,6 +109,14 @@ const bitcoinSumEls = bitcoinDonateEl.querySelectorAll(".bitcoin-sum");
 
 const bitcoinDonateThisSumEl = bitcoinDonateEl.querySelector(".donate-this-sum");
 
+var qrcodeBTC = new QRCode(bitcoinDonateEl.querySelector(".qrcode_image"), {
+    text: "test",
+    width: 150,
+    height: 150,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
 
 const refreshBitcoinDonateButton = ()=> {
 	const value = bitcoinDonateThisSumEl.getAttribute("value");
@@ -105,6 +126,10 @@ const refreshBitcoinDonateButton = ()=> {
 
 	//const value = paypalSumSelEl.getAttribute("value");
 	bitcoinDonateThisSumEl.textContent = `Donate Ƀ${value}`;
+	
+	qrcodeBTC.makeCode(url);
+	const img = bitcoinDonateEl.querySelector(".qrcode_image").src;
+	bitcoinDonateEl.querySelector(".qrcode_image").style.backgroundImage = img;
 };
 
 const btcInputSum_inputEl = bitcoinDonateEl.querySelector(".input-sum input");

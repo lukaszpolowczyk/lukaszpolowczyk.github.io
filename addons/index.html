@@ -40,7 +40,7 @@
 				<div class="donate-container">
 					
 					<div class="donate-start-button" data-pulse-heart="false">
-						<div class="heart"><div class="heart-x" data-hide-heart="true"></div></div>
+						<div class="heart"><div class="heart-y" data-hide-heart="true"><div class="heart-x" data-hide-heart="true"></div></div></div>
 						<div class="donate-start-button-x">
 							<div class="donate-descript">Donate me and my projects</div>
 							<span class="donate-types">(PayPal, Bitcoin, SMS)</span>
@@ -76,6 +76,16 @@
 											<img alt="" border="0" src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif" width="1" height="1">
 										</form>
 									</div>
+									<div class="qrcode" style="display: flex; justify-content: space-between;">
+										<div class="qrcode_panel">
+											<div class="qrcode_title">QR Code for this donate:</div>
+											<div class="qrcode_bitcoin-address">
+												<div>Paypal donate to this address:</div>
+												<div>dev.lukaszpolowczyk@gmail.com</div>
+											</div>
+										</div>
+										<div class="qrcode_image" style="width: 170px; height: 170px; background: silver;"></div>
+									</div>
 								</div>
 							</div>
 							<div class="bitcoin-donate donate-type" data-showed="false">
@@ -92,7 +102,7 @@
 										<div class="button bitcoin-5 bitcoin-sum donate-sum input-sum" value="0.00174" data-sel="false"><label>Other: <span class="curr-char">mɃ</span><input value="1.74" step="0.87" max="9999999.99" autocomplete='off' type="number" style="width: 64px;" oninput="this.style.width = ((this.value.length + 1) * 8) + 24 + 'px';"></label></div>
 									</div>
 									<div style="display: flex; justify-content: space-between; flex-wrap: wrap;-moz-user-select: none;	user-select: none;">
-										<div style="color: #7e7e7e;font-size: 13px; padding: 5px 3px 0 3px;	box-sizing: border-box;	width: 280px; font-family: Sans;">At the 1160USD / 1BTC rate - <br>approximate amounts</div>
+										<div style="color: #7e7e7e;font-size: 13px; padding: 5px 5px 0 5px;	box-sizing: border-box;	width: 280px; font-family: Sans;">At the 1160USD / 1BTC rate - <br>approximate amounts</div>
 										<a class="button donate-this-sum" target="_blank" value="0.00345">Donate Ƀ0.00345</a>
 									</div>
 									<div style="display: none;">
@@ -101,6 +111,16 @@
 										<a href="bitcoin:1ApifHGVqxAHq8sn5NyAjmhWocb85kJTp4?amount=0.0069?label=AddonsLukaszPolowczyk">Donate 6.90 mBTC (~ $8)</a>
 										<a href="bitcoin:1ApifHGVqxAHq8sn5NyAjmhWocb85kJTp4?amount=0.0138?label=AddonsLukaszPolowczyk">Donate 13.80 mBTC (~ $16)</a>
 										<a href="bitcoin:1ApifHGVqxAHq8sn5NyAjmhWocb85kJTp4?amount=0.02759?label=AddonsLukaszPolowczyk">Donate 27.59 mBTC (~ $32)</a>
+									</div>
+									<div class="qrcode" style="display: flex; justify-content: space-between;">
+										<div class="qrcode_panel">
+											<div class="qrcode_title">QR Code for this donate:</div>
+											<div class="qrcode_bitcoin-address">
+												<div>Transfer a bitcoin to this address:</div>
+												<div>1ApifHGVqxAHq8sn5NyAjmhWocb85kJTp4</div>
+											</div>
+										</div>
+										<div class="qrcode_image" style="width: 150px; height: 150px; background: silver;"></div>
 									</div>
 								</div>
 								
@@ -134,11 +154,12 @@
 				<template id="addon-pan">
 					<addon-pan class="">
 						<div class="flexbox">
-							<addon-icon></addon-icon>
+							<a class="addon-icon" target="_blank"></a>
 							<a class="install" href="">
 								<h2></h2>
 								<div class="des"><span class="usersState"></span> <b></b> active users</div>
 								<div class="install-des">Click to Install</div>
+								<div class="amo-des">Click to open in AMO</div>
 							</a>
 						</div>
 						<a class="addon-des"></a>
@@ -177,7 +198,9 @@
 	</div>
 	<div class="ad2">
 	</div>
-
+	
+	<script src="qrcodelib/jquery.min.js"></script>
+	<script src="qrcodelib/qrcode.js"></script>
 	<script src="main.js"></script>
 	<script src="donate.js"></script>
 </body>

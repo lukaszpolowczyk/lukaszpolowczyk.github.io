@@ -191,18 +191,6 @@ body {
 	width: 800px;
 	bottom: 0;
 }
-
-.donate-start-button {
-	position: absolute;
-	bottom: 30px;
-	right: 40px;
-	background: white;
-	border-radius: 3px;
-}
-.donate-start-button:hover {
-	cursor: pointer;
-	background: #ffdb9c;
-}
 /*
 .donate-start-button:hover .donate-descript,
 .donate-start-button:hover .donate-types {
@@ -263,12 +251,17 @@ body {
 	border-color: orange;
 }
 
-.donate-options .donate-type-button:hover,
 .donate-options .donate-type-button[data-showed="true"]{
 	cursor: pointer;
 	border-color: #ad8601;
 	background-color: rgba(255, 197, 0, 0.2);
 }
+
+.donate-options .donate-type-button:hover {
+	cursor: pointer;
+	border-color: #ad8601;
+}
+
 
 /*.donate-options .donate-type-button:hover {
 }*/
@@ -335,9 +328,9 @@ h2 {
 /*.des {
 }*/
 
-.des, .install-des {
+.des, .install-des, .amo-des {
 	font-size: 11px;
-	color: green;
+	color: green;/*#347a27;*/
 	text-align: right;
 	margin-top: 3px;
 	/*! flex-basis: 1; */
@@ -349,20 +342,33 @@ h2 {
 	font-family: "serif";
 }
 
-.install-des, addon-pan:hover .des {
+.install-des, addon-pan .install:hover .des {
 	display: none;
 }
 
-addon-pan:hover .install-des {
+addon-pan .install:hover .install-des {
 	display: block;
+}
+
+
+.amo-des, addon-pan .addon-icon:hover ~ .install .des {
+	display: none;
+}
+
+addon-pan .addon-icon:hover ~ .install .amo-des {
+	display: block;
+}
+
+.addon-icon {
+	outline: none;
 }
 
 .under {
 	color: #7e7e7e;
 }
 
-addon-pan:hover h2, addon-pan:hover .des, addon-pan:hover .install-des {
-	color: #347a27;
+addon-pan .install:hover h2, addon-pan .install:hover .des, addon-pan .install:hover .install-des, .amo-des {
+	color: green;/*#347a27;*/
 	transition-property: color;
 	transition-duration: 180ms;
 }
@@ -393,7 +399,7 @@ addon-pan .install {
 /*addon-pan:hover .install {
 }*/
 
-addon-icon {
+.addon-icon {
 	width: 42px;
 	height: 42px;
 	background-size: 42px;
@@ -464,6 +470,8 @@ addon-icon {
 	color: white;
 	
 	cursor: pointer;
+	transition-duration: 80ms;
+	transition-property: background-color;
 }
 .donate:hover .donate-descript {
 	color: #393939;
@@ -530,7 +538,9 @@ addon-icon {
   /*! text-decoration: underline; */
 	cursor: pointer;
 	outline: none;
-  color: green;
+	color: green;/*#347a27;*/
+	transition-duration: 80ms;
+	transition-property: color;
 }
 
 .ad-backgorund {

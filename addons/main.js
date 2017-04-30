@@ -62,7 +62,7 @@ const playAddonPresentation = (addonId)=> {
 };
 
 let animation;
-window.addEventListener("focus", ()=> {
+const startDonate = ()=> {
 	const arrowEl = bodyClassEl.querySelector("arrow");
 	animation = arrowEl.animate(
 		[
@@ -123,7 +123,9 @@ window.addEventListener("focus", ()=> {
 			iterations: "infinite"
 		}
 	);*/
-});
+}
+window.addEventListener("focus", startDonate);
+//startDonate();
 window.addEventListener("blur", ()=> {
 	animation.pause();
 });
@@ -256,7 +258,8 @@ addons.forEach((addon)=>{
 	const addonPanEl = tempEl("addon-pan");
 	addonPanEl.querySelector("h2").textContent = addon.name;
 	addonPanEl.querySelector("addon-pan").className = addon.id;
-	addonPanEl.querySelector("addon-icon").style = `background-image: url(icons/${addon.id}.png)`;
+	addonPanEl.querySelector(".addon-icon").style = `background-image: url(icons/${addon.id}.png)`;
+	addonPanEl.querySelector(".addon-icon").href = addon.amoLink;
 	addonPanEl.querySelector(".install").href = addon.installLink;
 
 	addonPanEl.querySelector(".des").classList.add(addon.usersState);

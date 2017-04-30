@@ -15,10 +15,6 @@
 	
 }*/
 
-.donate-slide {
-	/*display: flex;*/
-}
-
 .sums-bar {
 	display: flex;
 	min-width: 341px;
@@ -124,6 +120,7 @@ input[type="checkbox"]:active {
 	content: '\2665';
 	/*text-shadow: 0px 0px 3px #8a8a8a;*/
 	background: transparent;
+	transform: scale(12.3, 11);
 }
 .heart {
 	color: #f88095;
@@ -144,6 +141,9 @@ input[type="checkbox"]:active {
 
 .heart-x {
 	transform: translate(0, 109%);
+}
+.heart-y {
+	transform: scale(1.17, 1);
 }
 
 .heart-x[data-hide-heart="false"] {
@@ -166,14 +166,16 @@ input[type="checkbox"]:active {
 
 @keyframes showheart { 
 	0% { transform: translate(0, 109%); }
+	16% { transform: translate(0, -12%); }
+	26% { transform: translate(0, 0%); }
 	100% { transform: translate(0, 0%); }
 }
 
 @keyframes pulse {
 	0% { transform: scale(1.3); }
 	70% { transform: scale(1.3); }
-	80% { transform: scale(1); }
-	85% { transform: scale(1); }
+	80% { transform: scale(1) translate(0, 4%); }
+	85% { transform: scale(1) translate(0, 4%); }
 	100% { transform: scale(1.3); }
 }
 
@@ -181,7 +183,50 @@ input[type="checkbox"]:active {
 @keyframes pulseblood {
 	0% { background: white; }
 	70% { background: white; }
-	80% { background: #fed1d9; } /* #fed1d9 #ffe7eb */
-	89% { background: #fed1d9; }
+	80% { background: #ffe7eb; } /* #fed1d9 #ffe7eb */
+	89% { background: #ffe7eb; }
 	100% { background: white; }
+}
+
+
+
+.donate-start-button {
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+	background-color: white;
+	border-radius: 3px;
+}
+.donate-start-button:hover {
+	cursor: pointer;
+	background-color: #ffdb9c !important;
+	transition-duration: 80ms;
+	transition-property: background-color;
+}
+
+.qrcode {
+	margin: 10px 0 0 0;
+	padding-left: 5px;
+	border-top: 1px solid silver;
+	padding-top: 10px;
+}
+.qrcode_panel {
+	margin: 0 0px 0 0;
+	color: #424242;
+	font-size: 13px;
+	font-family: 'Open Sans',X-LocaleSpecific,sans-serif !important;
+	font-style: normal !important;
+	font-weight: 400;
+}
+.qrcode_title {
+	padding: 5px 10px 10px 0;
+	font-size: 17px;
+	font-weight: 700;
+}
+.qrcode_address {
+	padding: 10px 10px;
+}
+
+.qrcode_image {
+	margin: 5px;
 }
