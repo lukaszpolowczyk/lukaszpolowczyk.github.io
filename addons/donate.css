@@ -147,7 +147,7 @@ input[type="checkbox"]:active {
 }
 
 .heart-x[data-hide-heart="false"] {
-	animation: showheart 2s ease 1 forwards;
+	animation: showheart 2.5s ease 1 forwards;
 }
 
 
