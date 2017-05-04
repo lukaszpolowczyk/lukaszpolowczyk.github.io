@@ -45,12 +45,12 @@ const refreshDonateButton = ()=> {
 };
 
 
-donateStartButtonEl.addEventListener("mousedown", ()=> {
+donateStartButtonEl.addEventListener("click", ()=> {
 	slidesEl.setAttribute("donate-mode", true);
 });
 
 
-donateEl.addEventListener("mousedown", ()=> {
+donateEl.addEventListener("click", ()=> {
 	slidesEl.setAttribute("donate-mode", true);
 });
 

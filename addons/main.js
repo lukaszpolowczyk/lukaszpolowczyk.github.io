@@ -71,6 +71,7 @@ const startDonate = ()=> {
 		heartXEl.setAttribute("data-hide-heart", "false");
 	}, 1700);
 }
+window.addEventListener("focus", startDonate);
 	// const arrowEl = bodyClassEl.querySelector("arrow");
 	// animation = arrowEl.animate(
 	// 	[
