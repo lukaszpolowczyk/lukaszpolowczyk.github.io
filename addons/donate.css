@@ -230,3 +230,9 @@ input[type="checkbox"]:active {
 .qrcode_image {
 	margin: 5px;
 }
+
+#donate-start-button .donate-start-button-x,
+#donate-start-button .donate-descript,
+#donate-start-button .donate-types {
+	pointer-events: none;
+}
