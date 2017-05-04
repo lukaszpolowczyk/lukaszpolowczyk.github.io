@@ -73,6 +73,8 @@ const startDonate = ()=> {
 	}, 1700);
 }
 window.addEventListener("visibilitychange", startDonate);
+window.addEventListener("focus", startDonate);
+window.addEventListener("mouseenter", startDonate);
 	// const arrowEl = bodyClassEl.querySelector("arrow");
 	// animation = arrowEl.animate(
 	// 	[
@@ -132,7 +134,6 @@ window.addEventListener("visibilitychange", startDonate);
 			iterations: "infinite"
 		}
 	);*/
-window.addEventListener("focus", startDonate);
 //startDonate();
 window.addEventListener("blur", ()=> {
 	animation.pause();

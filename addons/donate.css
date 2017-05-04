@@ -233,6 +233,15 @@ input[type="checkbox"]:active {
 
 #donate-start-button .donate-start-button-x,
 #donate-start-button .donate-descript,
-#donate-start-button .donate-types {
+#donate-start-button .donate-types,
+
+#donate-start-button .heart-y,
+#donate-start-button .heart-x,
+#donate-start-button .heart-x:before,
+
+.donate .donate-types,
+.donate .donate-descript,
+
+.install * {
 	pointer-events: none;
 }
