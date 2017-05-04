@@ -63,6 +63,7 @@ const playAddonPresentation = (addonId)=> {
 
 let animation;
 const startDonate = ()=> {
+	if (document.hidden) { return false; }
 	
 	const donateStartButtonEl = document.querySelector(".donate-start-button");
 	const heartXEl = document.querySelector(".heart-x");
@@ -71,7 +72,7 @@ const startDonate = ()=> {
 		heartXEl.setAttribute("data-hide-heart", "false");
 	}, 1700);
 }
-window.addEventListener("focus", startDonate);
+window.addEventListener("visibilitychange", startDonate);
 	// const arrowEl = bodyClassEl.querySelector("arrow");
 	// animation = arrowEl.animate(
 	// 	[
