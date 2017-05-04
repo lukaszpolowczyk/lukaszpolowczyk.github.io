@@ -135,9 +135,9 @@ window.addEventListener("mouseenter", startDonate);
 		}
 	);*/
 //startDonate();
-window.addEventListener("blur", ()=> {
-	animation.pause();
-});
+// window.addEventListener("blur", ()=> {
+// 	animation.pause();
+// });
 
 
 donateEl.addEventListener("mouseenter", ()=>{
