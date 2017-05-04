@@ -135,8 +135,8 @@ const refreshBitcoinDonateButton = ()=> {
 const btcInputSum_inputEl = bitcoinDonateEl.querySelector(".input-sum input");
 btcInputSum_inputEl.addEventListener("input", ()=>{
 	const inputSumEl = bitcoinDonateEl.querySelector(".input-sum");
-	inputSumEl.setAttribute("value", btcInputSum_inputEl.value/1000);
-	const value = inputSumEl.getAttribute("value");
+	const value = Math.ceil((btcInputSum_inputEl.value/1000)*100000)/100000;
+	inputSumEl.setAttribute("value", value);
 	bitcoinDonateThisSumEl.setAttribute("value", value);
 	refreshBitcoinDonateButton();
 });

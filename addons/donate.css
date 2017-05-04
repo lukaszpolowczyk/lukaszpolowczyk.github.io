@@ -136,7 +136,7 @@ input[type="checkbox"]:active {
 }
 
 .donate-start-button[data-pulse-heart="true"] .heart {
-	animation: pulse 2s ease infinite;
+	animation: pulse 1.2s ease infinite;
 }
 
 .heart-x {
@@ -154,7 +154,7 @@ input[type="checkbox"]:active {
 
 .donate-start-button[data-pulse-heart="true"] {
 	z-index: 10;
-	animation: pulseblood 2s ease infinite;
+	animation: pulseblood 1.2s ease infinite;
 }
 
 .donate-start-button-x {
