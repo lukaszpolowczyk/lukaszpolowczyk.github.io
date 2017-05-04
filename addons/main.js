@@ -132,7 +132,6 @@ window.addEventListener("visibilitychange", startDonate);
 			iterations: "infinite"
 		}
 	);*/
-window.addEventListener("focus", startDonate);
 //startDonate();
 window.addEventListener("blur", ()=> {
 	animation.pause();
