@@ -69,8 +69,6 @@ const startDonate = ()=> {
 	const heartXEl = document.querySelector(".heart-x");
 	
 	let delay = 1700;
-	const hasAfterInstall = window.location.hash === "#afterinstall";
-	history.replaceState ("", document.title, window.location.href.split('#')[0]);
 	if (hasAfterInstall) {
 		delay = 0;
 	}
