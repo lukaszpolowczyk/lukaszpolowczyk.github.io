@@ -67,10 +67,24 @@ const startDonate = ()=> {
 	
 	const donateStartButtonEl = document.querySelector(".donate-start-button");
 	const heartXEl = document.querySelector(".heart-x");
+	
+	let delay = 1700;
+	const hasAfterInstall = window.location.hash === "#afterinstall";
+	history.replaceState ("", document.title, window.location.href.split('#')[0]);
+	if (hasAfterInstall) {
+		delay = 0;
+	}
+	
 	setTimeout(()=>{
 		donateStartButtonEl.setAttribute("data-pulse-heart", "true");
 		heartXEl.setAttribute("data-hide-heart", "false");
-	}, 1700);
+	}, delay);
+	
+	if (hasAfterInstall) {
+		setTimeout(()=>{
+			slidesEl.setAttribute("donate-mode", "true");
+		}, 2400+850);
+	}
 }
 window.addEventListener("visibilitychange", startDonate);
 window.addEventListener("focus", startDonate);
