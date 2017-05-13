@@ -1,4 +1,5 @@
-
+//@ ts-check
+'use strict';
 
 const donatePanelEl = document.querySelector(".paypal-donate");
 const donateStartButtonEl = document.querySelector(".donate-start-button");
@@ -46,12 +47,12 @@ const refreshDonateButton = ()=> {
 
 
 donateStartButtonEl.addEventListener("click", ()=> {
-	slidesEl.setAttribute("donate-mode", true);
+	slidesEl.setAttribute("donate-mode", "true");
 });
 
 
 donateEl.addEventListener("click", ()=> {
-	slidesEl.setAttribute("donate-mode", true);
+	slidesEl.setAttribute("donate-mode", "true");
 });
 
 const inputSum_inputEl = donatePanelEl.querySelector(".input-sum input");
@@ -64,7 +65,7 @@ inputSum_inputEl.addEventListener("input", ()=>{
 });
 
 const paypalSumSel = (paypalSumSelEl) => {
-	donatePanelEl.querySelector(`.donate-sum[data-sel="true"]`).setAttribute("data-sel", false);
+	donatePanelEl.querySelector(`.donate-sum[data-sel="true"]`).setAttribute("data-sel", "false");
 	paypalSumSelEl.setAttribute("data-sel", true);
 	const value = paypalSumSelEl.getAttribute("value");
 	donateThisSumEl.setAttribute("value", value);
@@ -142,7 +143,7 @@ btcInputSum_inputEl.addEventListener("input", ()=>{
 });
 
 const bitcoinSumSel = (bitcoinSumSelEl) => {
-	bitcoinDonateEl.querySelector(`.donate-sum[data-sel="true"]`).setAttribute("data-sel", false);
+	bitcoinDonateEl.querySelector(`.donate-sum[data-sel="true"]`).setAttribute("data-sel", "false");
 	bitcoinSumSelEl.setAttribute("data-sel", true);
 	const value = bitcoinSumSelEl.getAttribute("value");
 	bitcoinDonateThisSumEl.setAttribute("value", value);
