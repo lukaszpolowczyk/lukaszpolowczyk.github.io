@@ -1,6 +1,8 @@
 //@ ts-check
 'use strict';
 
+const bitcoinCurse = 1160; // in USB
+
 const donatePanelEl = document.querySelector(".paypal-donate");
 const donateStartButtonEl = document.querySelector(".donate-start-button");
 
@@ -139,6 +141,7 @@ btcInputSum_inputEl.addEventListener("input", ()=>{
 	const value = Math.ceil((btcInputSum_inputEl.value/1000)*100000)/100000;
 	inputSumEl.setAttribute("value", value);
 	bitcoinDonateThisSumEl.setAttribute("value", value);
+	bitcoinDonateEl.querySelector(".approximate-sum").textContent = "~$"+Math.floor(value*bitcoinCurse);
 	refreshBitcoinDonateButton();
 });
 

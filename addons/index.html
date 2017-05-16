@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+	<script src="addons.js"></script>
 	<script>
-		window.hasAfterInstall = window.location.hash === "#afterinstall";
+		const hash = window.location.hash;
+		window.hasAfterInstall = str.includes(hash);
+		window.installAddonName = hash.replace("afterinstall", "");
 		history.replaceState ("", document.title, window.location.href.split('#')[0]);
 	</script>
 	
@@ -64,7 +67,7 @@
 								<div>
 									<div class="donate-text">
 										<div class="donate-text-title">Donate me and my projects with Paypal</div>
-										<div class="donate-text-des">1.Select sum. 2.Check monthly, if you want make this payment a monthly contribution. 3.Swich currency. 4.Donate.</div>
+										<div class="donate-text-des">1.Select sum. 2.Swich currency. 3.Check monthly, if you want make this payment a monthly contribution. 4.Donate.</div>
 									</div>
 									<div class="sums-bar">
 										<div class="button paypal-1 paypal-sum donate-sum" value="4" data-sel="true"><span class="curr-char">$</span>4</div>
@@ -74,10 +77,12 @@
 										<div class="button paypal-5 paypal-sum donate-sum input-sum" value="2" data-sel="false"><label>Other: <span class="curr-char">$</span><input value="2" step="any" max="9999999.99" autocomplete='off' type="number" style="width: 40px;" oninput="this.style.width = ((this.value.length + 1) * 8) + 24 + 'px';"></label></div>
 									</div>
 									<div style="display: flex; justify-content: space-between; flex-wrap: wrap;-moz-user-select: none;	user-select: none;">
-										<div class="button paypal-sub input-sub" monthly="">
-											<label title="Make this payment a monthly contribution"><input type="checkbox" autocomplete='off'>monthly</label>
-										</div>
+										<div style="display:flex;">
 										<div class="button currency-switch" data-curr="USD" data-curr-char="$" title="Switch currency Euro or US Dolar"><span class="curr-usd">$</span>|<span class="curr-eur">€</span></div>
+										<div class="button paypal-sub input-sub" monthly="">
+												<label title="Make this payment a monthly contribution"><input type="checkbox" autocomplete='off'>monthly</label>
+											</div>
+										</div>
 										<a class="button donate-this-sum" target="_blank" value="4">Donate $4</a>
 										<form style="display: none;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 											<input type="hidden" name="cmd" value="_s-xclick">
@@ -105,11 +110,11 @@
 										<div class="donate-text-des">1.Select sum. 2.Donate.</div>
 									</div>
 									<div class="sums-bar">
-										<div class="button bitcoin-1 bitcoin-sum donate-sum" value="0.00345" data-sel="true">mɃ3.45</div>
-										<div class="button bitcoin-2 bitcoin-sum donate-sum" value="0.0069" data-sel="false">mɃ6.9</div>
-										<div class="button bitcoin-3 bitcoin-sum donate-sum" value="0.0138" data-sel="false">mɃ13.8</div>
-										<div class="button bitcoin-4 bitcoin-sum donate-sum" value="0.02759" data-sel="false">mɃ27.59</div>
-										<div class="button bitcoin-5 bitcoin-sum donate-sum input-sum" value="0.00174" data-sel="false"><label>Other: <span class="curr-char">mɃ</span><input value="1.74" step="0.87" max="9999999.99" autocomplete='off' type="number" style="width: 64px;" oninput="this.style.width = ((this.value.length + 1) * 8) + 24 + 'px';"></label></div>
+										<div class="button bitcoin-1 bitcoin-sum donate-sum" value="0.00345" data-sel="true">mɃ3.45<div class="approxi-sum">~$4</div></div>
+										<div class="button bitcoin-2 bitcoin-sum donate-sum" value="0.0069" data-sel="false">mɃ6.9<div class="approxi-sum">~$8</div></div>
+										<div class="button bitcoin-3 bitcoin-sum donate-sum" value="0.0138" data-sel="false">mɃ13.8<div class="approxi-sum">~$16</div></div>
+										<div class="button bitcoin-4 bitcoin-sum donate-sum" value="0.02759" data-sel="false">mɃ27.59<div class="approxi-sum">~$32</div></div>
+										<div class="button bitcoin-5 bitcoin-sum donate-sum input-sum" value="0.00174" data-sel="false"><label>Other: <span class="curr-char">mɃ</span><input value="1.74" step="0.87" max="9999999.99" autocomplete='off' type="number" style="width: 64px;" oninput="this.style.width = ((this.value.length + 1) * 8) + 24 + 'px';"></label><div class="approxi-sum approximate-sum">~$2</div></div>
 									</div>
 									<div style="display: flex; justify-content: space-between; flex-wrap: wrap;-moz-user-select: none;	user-select: none;">
 										<div style="color: #7e7e7e;font-size: 13px; padding: 5px 5px 0 5px;	box-sizing: border-box;	width: 280px; font-family: Sans;">At the 1160USD / 1BTC rate - <br>approximate amounts</div>
@@ -159,7 +164,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="padding: 9px 10px 5px 10px; background-color: white; margin: 0 12px; font-size: 12px;" data-presentations="Hover over tiles to Watch a quick presentation of pointed Addon:">Click tile to install the indicated Addon for Firefox:</div>
+			<div style="padding: 9px 10px 5px 10px; background-color: white; margin: 0 12px; font-size: 12px;" data-presentations="Hover over tiles to Watch a quick presentation of pointed Addon:">Click title to install the indicated Addon for Firefox:</div>
 			<addons-pans class="addons-pans">
 				<template id="addon-pan">
 					<addon-pan class="">

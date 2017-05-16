@@ -480,12 +480,12 @@ addon-pan .install {
 	transition-property: background-color;
 }
 .donate:hover .donate-descript {
-	color: #393939;
+	color: rgba(171, 99, 6, 0.9);/*#393939;*/
 	/*text-shadow: rgb(51, 51, 51, .4) 1px 1px 0px;*/
 }
 
  .donate:hover .donate-types {
-	 color: #7e7e7e;
+	 color: rgba(171, 123, 62, 0.9);/*#7e7e7e;*/
  }
 
 .donate-descript {

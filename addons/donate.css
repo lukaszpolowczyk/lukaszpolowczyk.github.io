@@ -5,12 +5,18 @@
 	border-radius: 2px;
 	padding: 3px 4px;
 	margin: 5px 5px;
-	display: flex;
+	display: block;
 	align-items: center;
 	flex-wrap: wrap;
 	font-size: 16px;
 	font-family: serif;
-} 
+}
+
+.button.currency-switch {
+    display: flex;
+}
+
+
 /*.paypal-sum {
 	
 }*/
@@ -244,4 +250,19 @@ input[type="checkbox"]:active {
 
 .install * {
 	pointer-events: none;
+}
+
+.donate-start-button:hover .donate-descript {
+	color: rgba(171, 99, 6, 0.9) !important;
+}
+
+.donate-start-button:hover .donate-types {
+	color: rgba(171, 123, 62, 0.9) !important;
+}
+
+.approxi-sum {
+	text-align: right;
+}
+.approximate-sum {
+	padding-right: 21px;
 }
