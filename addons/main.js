@@ -199,7 +199,9 @@ addons.forEach((addon)=>{
 	addonPanEl.querySelector("addon-pan").className = addon.id;
 	addonPanEl.querySelector(".addon-icon").style = `background-image: url(icons/${addon.id}.png)`;
 	addonPanEl.querySelector(".addon-icon").href = addon.amoLink;
+	addonPanEl.querySelector(".addon-icon").setAttribute("id", addon.id);
 	addonPanEl.querySelector(".install").href = addon.installLink;
+	addonPanEl.querySelector(".install").setAttribute("id", addon.id);
 
 	addonPanEl.querySelector(".des").classList.add(addon.usersState);
 	addonPanEl.querySelector(".des b").textContent = addon.users;
