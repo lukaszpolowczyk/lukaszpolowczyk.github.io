@@ -5,9 +5,11 @@
 	<script src="addons.js"></script>
 	<script>
 		const hash = window.location.hash;
-		window.hasAfterInstall = str.includes(hash);
-		window.installAddonName = hash.replace("afterinstall", "");
-		history.replaceState ("", document.title, window.location.href.split('#')[0]);
+		if (hash) {
+			window.hasAfterInstall = hash.includes("afterinstall");
+			window.installAddonName = hash.replace("afterinstall", "");
+			history.replaceState("", document.title, window.location.href.split('#')[0]);
+		}
 	</script>
 	
 	<!-- Google Tag Manager -->
