@@ -8,7 +8,7 @@
 		window.hasAfterInstall = undefined;
 		if (hash) {
 			window.hasAfterInstall = hash.includes("afterinstall");
-			window.installAddonName = hash.replace("afterinstall", "");
+			window.installAddonName = hash.replace("#afterinstall", "");
 			history.replaceState("", document.title, window.location.href.split('#')[0]);
 		}
 	</script>
