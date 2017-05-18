@@ -458,8 +458,8 @@ addon-pan .install {
 	/*align-items: center;
 	justify-content: center;*/
 	/*! justify-items: center; */
-	/*display: flex;
-	margin-bottom: 0;*/
+	/*display: flex;*/
+	margin-bottom: 0;
 	min-height: 570px;
 	padding: 0 !important;
 }
