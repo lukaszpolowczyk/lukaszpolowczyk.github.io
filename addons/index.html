@@ -6,9 +6,14 @@
 	<script>
 		const hash = window.location.hash;
 		window.hasAfterInstall = undefined;
-		if (hash) {
+		if (hash && hash.includes("afterinstall")) {
 			window.hasAfterInstall = hash.includes("afterinstall");
 			window.installAddonName = hash.replace("#afterinstall", "");
+			history.replaceState("", document.title, window.location.href.split('#')[0]);
+		} else
+		if (hash && hash.includes("afterupdate")) {
+			window.hasAfterUpdate = hash.includes("afterupdate");
+			window.installAddonName = hash.replace("#afterupdate", "");
 			history.replaceState("", document.title, window.location.href.split('#')[0]);
 		}
 	</script>
