@@ -5,7 +5,7 @@
 	<script src="addons.js"></script>
 	<script>
 		const hash = window.location.hash;
-		window.hasAfterInstall = undefined;
+		window.hasAfterInstall = false;
 		if (hash && hash.includes("afterinstall")) {
 			window.hasAfterInstall = hash.includes("afterinstall");
 			window.installAddonName = hash.replace("#afterinstall", "");
