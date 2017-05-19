@@ -54,6 +54,7 @@ donateStartButtonEl.addEventListener("click", ()=> {
 
 
 donateEl.addEventListener("click", ()=> {
+	window.scrollTo(0, 0);
 	slidesEl.setAttribute("donate-mode", "true");
 });
 
