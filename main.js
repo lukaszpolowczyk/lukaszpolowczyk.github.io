@@ -197,7 +197,7 @@ addons.forEach((addon)=>{
 	const addonPanEl = tempEl("addon-pan");
 	addonPanEl.querySelector("h2").textContent = addon.name;
 	addonPanEl.querySelector("addon-pan").className = addon.id;
-	addonPanEl.querySelector(".addon-icon").style = `background-image: url(icons/${addon.id}.png)`;
+	addonPanEl.querySelector(".addon-icon").style = `background-image: url(http://lukaszpolowczyk.github.io/icons/${addon.id}.png)`;
 	addonPanEl.querySelector(".addon-icon").href = addon.amoLink;
 	addonPanEl.querySelector(".addon-icon").setAttribute("id", addon.id);
 	addonPanEl.querySelector(".install").href = addon.installLink;
