@@ -458,6 +458,7 @@ addon-pan .install {
 	/*min-height: 570px;*/
 	height: calc( 100vh - 12px - 222px );
 	padding: 0 !important;
+	overflow: hidden;
 }
 
 .donate {
@@ -615,7 +616,6 @@ addon-pan .install {
 	}
 	
 	.sidebar.sid-inside {
-		position: fixed;
 	}
 	
 	.ad1 {
