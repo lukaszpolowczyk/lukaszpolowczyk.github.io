@@ -636,7 +636,7 @@ addon-pan .install {
 		height: 200px;
 		width: 529px !important;
 		max-width: 529px !important;
-		min-width: 529px !important;
+		min-height: 341px !important;
 		margin-right: 0;
 	}
 	
