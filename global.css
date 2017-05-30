@@ -14,12 +14,6 @@ body {
 	margin-bottom: 0;
 }
 
-.body {
-	display: flex;
-	/*! justify-self: center; */
-	/*! align-self: center; */
-}
-
 .main {
 	display: flex;
 	flex-direction: column;
@@ -33,7 +27,7 @@ body {
 	margin: 12px;
 	/*! box-sizing: border-box; */
 	max-height: 572px;
-	min-height: 542px;
+	min-height: 341px;
 	height: calc( 100vh - 12px - 28px - 222px );
 	display: flex;
 	overflow: hidden;
@@ -461,7 +455,7 @@ addon-pan .install {
 	/*! justify-items: center; */
 	/*display: flex;*/
 	margin-bottom: 0;
-	min-height: 570px;
+	/*min-height: 570px;*/
 	height: calc( 100vh - 12px - 222px );
 	padding: 0 !important;
 }
@@ -609,4 +603,44 @@ addon-pan .install {
 
 .article h3 {
 	margin-top: 12px;
+}
+
+
+
+@media (min-width: 1144px) {
+	.body {
+		display: flex;
+		/*! justify-self: center; */
+		/*! align-self: center; */
+	}
+	
+	.sidebar.sid-inside {
+		position: fixed;
+	}
+	
+	.ad1 {
+		
+	}
+}
+@media (max-width: 1143px) {
+	.sidebar.sid-inside {
+		flex-direction: row;
+	}
+	
+	.sidebar {
+		width: 824px;
+		height: auto;
+	}
+	
+	.ad1 {
+		height: 200px;
+		width: 529px !important;
+		max-width: 529px !important;
+		min-width: 529px !important;
+		margin-right: 0;
+	}
+	
+	.main {
+		margin-right: 0px;
+	}
 }
