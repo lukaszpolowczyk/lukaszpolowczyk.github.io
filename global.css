@@ -616,10 +616,11 @@ addon-pan .install {
 	}
 	
 	.sidebar.sid-inside {
+		position: fixed;
 	}
 	
 	.ad1 {
-		min-height: 341px !important;
+		min-height: 369px !important;
 	}
 }
 @media (max-width: 1143px) {
