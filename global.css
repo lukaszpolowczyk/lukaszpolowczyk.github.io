@@ -459,6 +459,9 @@ addon-pan .install {
 	height: calc( 100vh - 12px - 222px );
 	padding: 0 !important;
 	overflow: hidden;
+	background-image: url("adsfree.png");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .donate {
@@ -536,6 +539,7 @@ addon-pan .install {
 	font-size: 13px;
 	text-decoration: none;
 	outline: none;
+	display: block;
 }
 
 .link:hover {
@@ -615,9 +619,9 @@ addon-pan .install {
 		/*! align-self: center; */
 	}
 	
-	.sidebar.sid-inside {
-		position: fixed;
-	}
+	/*.sidebar.sid-inside {*/
+		/*position: fixed;*/
+	/*}*/
 	
 	.ad1 {
 		min-height: 369px !important;
@@ -633,6 +637,10 @@ addon-pan .install {
 		height: auto;
 	}
 	
+	.islet {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
 	.ad1 {
 		height: 200px;
 		width: calc( 100% - 282px - 12px ) !important;
@@ -648,13 +656,20 @@ addon-pan .install {
 	.slides {
 		height: calc( 100vh - 12px - 28px - 222px - 222px );
 	}
+	.slides[donate-mode="true"] { 
+		min-height: 568px;
+	}
+	
+	.ad1 {
+		background-position-y: 20px;
+	}
 }
 @media (max-width: 800px) {
 	addon-pan {
 		width: calc(100% / 2 - 12px);
 	}
-	.slides {
-		width: calc( 100% - 24px );
+	.slides, .donate-panel {
+		width: calc( 100vw - 24px );
 	}
 	.donate-container {
 		width: calc( 100% - 12px );
@@ -669,12 +684,41 @@ addon-pan .install {
 		top: 107px;
 	}
 	
-	.ad1 {
-		min-width: 260px !important;
-	}
-	
 	.donate-start-button {
 		right: 4px !important;
+	}
+}
+
+@media (max-width: 539px) {
+	.sidebar.sid-inside {
+				flex-direction: column;
+	}
+
+	.ad1 {
+		width: calc( 100% - 24px ) !important;
+		min-width: calc( 100% - 24px ) !important;
+		max-width: calc( 100% - 24px ) !important;
+	}
+	
+	addon-pan {
+		width: calc(100% - 12px);
+	}
+	
+	.simple-text {
+		display: none;
+	}
+	
+	.background {
+		background-image: url(moz-lightx.png), url(firefox.png), url(carousel-2.png), linear-gradient(to bottom,transparent 0,transparent 100px), linear-gradient(to bottom,rgba(12,153,213,0) 0,#0c99d5 500px,#0c99d5 0), repeating-linear-gradient(118deg,rgba(12,153,213,0) 0,#00a7e0 550px,rgba(12,153,213,0) 550px,#00a7e0 800px,rgba(12,153,213,0) 800px,#00a7e0 950px);
+	}
+	
+	.bigtitle-addons {
+		font-size: 37px;
+	}
+	
+	.ad1 {
+		background-position-y: center;
+		height: 369px;
 	}
 }
 
