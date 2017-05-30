@@ -450,10 +450,10 @@ addon-pan .install {
 	/*! flex-shrink: 0; */
 	/*! flex-grow: 0; */
 	/*! align-content: center; */
-	/*align-items: center;
-	justify-content: center;*/
+	align-items: center;
+	/*justify-content: center;*/
 	/*! justify-items: center; */
-	/*display: flex;*/
+	display: flex;
 	margin-bottom: 0;
 	/*min-height: 570px;*/
 	height: calc( 100vh - 12px - 222px );
