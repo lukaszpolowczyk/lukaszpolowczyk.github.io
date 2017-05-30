@@ -619,7 +619,7 @@ addon-pan .install {
 	}
 	
 	.ad1 {
-		
+		min-height: 341px !important;
 	}
 }
 @media (max-width: 1143px) {
@@ -636,7 +636,7 @@ addon-pan .install {
 		height: 200px;
 		width: 529px !important;
 		max-width: 529px !important;
-		min-height: 341px !important;
+		min-width: 529px !important;
 		margin-right: 0;
 	}
 	
