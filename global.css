@@ -450,10 +450,10 @@ addon-pan .install {
 	/*! flex-shrink: 0; */
 	/*! flex-grow: 0; */
 	/*! align-content: center; */
-	align-items: center;
+	/*align-items: center;*/
 	/*justify-content: center;*/
 	/*! justify-items: center; */
-	display: flex;
+	/*display: flex;*/
 	margin-bottom: 0;
 	/*min-height: 570px;*/
 	height: calc( 100vh - 12px - 222px );
@@ -635,13 +635,49 @@ addon-pan .install {
 	
 	.ad1 {
 		height: 200px;
-		width: 529px !important;
-		max-width: 529px !important;
-		min-width: 529px !important;
+		width: calc( 100% - 282px - 12px ) !important;
+		max-width: calc( 100% - 282px - 12px ) !important;
+		min-width: calc( 100% - 282px - 12px ) !important;
 		margin-right: 0;
 	}
 	
 	.main {
 		margin-right: 0px;
 	}
+	
+	.slides {
+		height: calc( 100vh - 12px - 28px - 222px - 222px );
+	}
+}
+@media (max-width: 800px) {
+	addon-pan {
+		width: calc(100% / 2 - 12px);
+	}
+	.slides {
+		width: calc( 100% - 24px );
+	}
+	.donate-container {
+		width: calc( 100% - 12px );
+	}
+	
+	addons-pans, .sidebar {
+		width: calc( 100% );
+	}
+	
+	.simple-text {
+		left: 21px;
+		top: 107px;
+	}
+	
+	.ad1 {
+		min-width: 260px !important;
+	}
+	
+	.donate-start-button {
+		right: 4px !important;
+	}
+}
+
+.ad-backgorund {
+	display: none;
 }
