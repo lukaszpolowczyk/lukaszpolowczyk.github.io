@@ -657,7 +657,7 @@ addon-pan .install {
 	}
 	
 	.slides {
-		height: calc( 100vh - 12px - 29px - 222px - 222px );
+		height: calc( 100% - 12px - 29px - 222px - 222px );
 	}
 	.slides[donate-mode="true"] { 
 		min-height: 568px;
@@ -671,17 +671,17 @@ addon-pan .install {
 		overflow-x: auto;
 	}
 	.donate-slide {
-		min-width: 447px;
+		min-width: 471px !important;
 	}
 }
-@media (max-width: 826px) {
+@media (max-width: 836px) {
 	addon-pan {
 		width: calc(100% / 2 - 12px);
 	}
-	.slides, .donate-panel {
-		width: calc( 100vw - 24px );
+	.slides {
+		width: calc( 100% - 24px );
 	}
-	.donate-container {
+	.donate-container, .donate-panel {
 		width: calc( 100% );
 	}
 	
@@ -699,7 +699,7 @@ addon-pan .install {
 	}
 }
 
-@media (max-width: 551px) {
+@media (max-width: 563px) {
 	.sidebar.sid-inside {
 				flex-direction: column;
 	}
@@ -731,7 +731,7 @@ addon-pan .install {
 		height: 369px;
 	}
 }
-@media (max-width: 277px) {
+@media (max-width: 289px) {
 	.slides, .donate-panel, .ad1 {
 		width: calc( 100% ) !important;
 		min-width: calc( 100% ) !important;
@@ -757,9 +757,9 @@ addon-pan .install {
 	
 	
 	.slides[donate-mode="true"], .slides[donate-mode="true"] .donate-panel {
-		width: 447px !important;
-		min-width: 447px !important;
-		max-width: 447px !important;
+		width: 471px !important;
+		min-width: 471px !important;
+		max-width: 471px !important;
 	}
 }
 
