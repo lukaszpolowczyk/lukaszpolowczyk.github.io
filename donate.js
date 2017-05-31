@@ -50,12 +50,16 @@ const refreshDonateButton = ()=> {
 
 donateStartButtonEl.addEventListener("click", ()=> {
 	slidesEl.setAttribute("donate-mode", "true");
+	//donateSlideEl.querySelector(".sms-donate").setAttribute("src", "https://payment.allopass.com/buy/buy.apu?ids=339273&amp;idd=1498304");
+
 });
 
 
 donateEl.addEventListener("click", ()=> {
 	window.scrollTo(0, 0);
 	slidesEl.setAttribute("donate-mode", "true");
+	//donateSlideEl.querySelector(".sms-donate").setAttribute("src", "https://payment.allopass.com/buy/buy.apu?ids=339273&amp;idd=1498304");
+
 });
 
 const inputSum_inputEl = donatePanelEl.querySelector(".input-sum input");
@@ -163,6 +167,9 @@ bitcoinSumEls.forEach((bitcoinSumEl)=>{
 		//bitcoinDonateThisSumEl.setAttribute("href", link);
 	});
 });
+
+//donateSlideEl.querySelector(".sms-donate-type").addEventListener("mousedown", ()=> {
+//});
 
 // const bitcoinSumSelect = ()=> {
 	
