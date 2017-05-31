@@ -28,7 +28,7 @@ body {
 	/*! box-sizing: border-box; */
 	max-height: 572px;
 	min-height: 341px;
-	height: calc( 100vh - 12px - 28px - 222px );
+	height: calc( 100vh - 12px - 29px - 222px );
 	display: flex;
 	overflow: hidden;
 	width: 800px;
@@ -641,6 +641,9 @@ addon-pan .install {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
+	.sidebar-block {
+		width: 100%;
+	}
 	.ad1 {
 		height: 200px;
 		width: calc( 100% - 282px - 12px ) !important;
@@ -654,7 +657,7 @@ addon-pan .install {
 	}
 	
 	.slides {
-		height: calc( 100vh - 12px - 28px - 222px - 222px );
+		height: calc( 100vh - 12px - 29px - 222px - 222px );
 	}
 	.slides[donate-mode="true"] { 
 		min-height: 568px;
@@ -663,8 +666,15 @@ addon-pan .install {
 	.ad1 {
 		background-position-y: 20px;
 	}
+	
+	.donate-panel {
+		overflow-x: auto;
+	}
+	.donate-slide {
+		min-width: 447px;
+	}
 }
-@media (max-width: 800px) {
+@media (max-width: 826px) {
 	addon-pan {
 		width: calc(100% / 2 - 12px);
 	}
@@ -672,7 +682,7 @@ addon-pan .install {
 		width: calc( 100vw - 24px );
 	}
 	.donate-container {
-		width: calc( 100% - 12px );
+		width: calc( 100% );
 	}
 	
 	addons-pans, .sidebar {
@@ -689,7 +699,7 @@ addon-pan .install {
 	}
 }
 
-@media (max-width: 539px) {
+@media (max-width: 551px) {
 	.sidebar.sid-inside {
 				flex-direction: column;
 	}
@@ -719,6 +729,37 @@ addon-pan .install {
 	.ad1 {
 		background-position-y: center;
 		height: 369px;
+	}
+}
+@media (max-width: 277px) {
+	.slides, .donate-panel, .ad1 {
+		width: calc( 100% ) !important;
+		min-width: calc( 100% ) !important;
+		max-width: calc( 100% ) !important;
+	}
+	
+	addon-pan {
+		width: calc(100%);
+	}
+	
+	.slides, div[data-presentations], addons-pans, addon-pan, .ad1, .islet {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	addons-pans {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	body {
+		justify-content: left;
+	}
+	
+	
+	.slides[donate-mode="true"], .slides[donate-mode="true"] .donate-panel {
+		width: 447px !important;
+		min-width: 447px !important;
+		max-width: 447px !important;
 	}
 }
 
