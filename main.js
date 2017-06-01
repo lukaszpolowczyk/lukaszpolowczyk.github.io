@@ -191,7 +191,7 @@ function tempEl (tempId) {
 		}
 	}
 
-// const addonsPansEl = mainEl.querySelector(".addons-pans");
+const addonsPansEl = mainEl.querySelector(".addons-pans");
 
 // addons.forEach((addon)=>{
 // 	const addonPanEl = tempEl("addon-pan");
