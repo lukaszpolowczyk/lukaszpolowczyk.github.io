@@ -671,7 +671,7 @@ addon-pan .install {
 		overflow-x: auto;
 	}
 	.donate-slide {
-		min-width: 471px !important;
+		min-width: 590px !important;
 	}
 }
 @media (max-width: 836px) {
@@ -757,9 +757,9 @@ addon-pan .install {
 	
 	
 	.slides[donate-mode="true"], .slides[donate-mode="true"] .donate-panel {
-		width: 471px !important;
-		min-width: 471px !important;
-		max-width: 471px !important;
+		width: 590px !important;
+		min-width: 590px !important;
+		max-width: 590px !important;
 	}
 }
 

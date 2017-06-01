@@ -47,19 +47,14 @@ const refreshDonateButton = ()=> {
 	donatePanelEl.querySelector(".qrcode_image").style.backgroundImage = img;
 };
 
-
 donateStartButtonEl.addEventListener("click", ()=> {
 	slidesEl.setAttribute("donate-mode", "true");
-	//donateSlideEl.querySelector(".sms-donate").setAttribute("src", "https://payment.allopass.com/buy/buy.apu?ids=339273&amp;idd=1498304");
-
 });
 
 
 donateEl.addEventListener("click", ()=> {
 	window.scrollTo(0, 0);
 	slidesEl.setAttribute("donate-mode", "true");
-	//donateSlideEl.querySelector(".sms-donate").setAttribute("src", "https://payment.allopass.com/buy/buy.apu?ids=339273&amp;idd=1498304");
-
 });
 
 const inputSum_inputEl = donatePanelEl.querySelector(".input-sum input");
@@ -168,8 +163,11 @@ bitcoinSumEls.forEach((bitcoinSumEl)=>{
 	});
 });
 
-//donateSlideEl.querySelector(".sms-donate-type").addEventListener("mousedown", ()=> {
-//});
+donateSlideEl.querySelector(".sms-donate-type").addEventListener("mousedown", ()=> {
+	const iframeSMSDonate = `<iframe width="550" height="480" frameborder="0" marginheight="0" marginwidth="0"
+	scrolling="no" src="https://payment.allopass.com/buy/buy.apu?ids=339273&amp;idd=1498304"></iframe>`;
+	donateSlideEl.querySelector(".sms-donate").innerHTML = iframeSMSDonate;
+});
 
 // const bitcoinSumSelect = ()=> {
 	
