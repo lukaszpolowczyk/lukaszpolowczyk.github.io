@@ -28,7 +28,7 @@ window.addons = [
 		users: "300",
 		usersState: "over",
 		amoLink: "https://addons.mozilla.org/firefox/addon/right-mouse-mouse-wheel-zoom-p/",
-		installLink: "https://addons.mozilla.org/firefox/downloads/latest/right-mouse-mouse-wheel-zoom-p/platform:2/addon-665486-latest.xpi?src=dp-btn-primary",
+		installLink: /*"addons/mssp.xpi"*/ "https://addons.mozilla.org/firefox/downloads/latest/right-mouse-mouse-wheel-zoom-p/platform:2/addon-665486-latest.xpi?src=dp-btn-primary",
 		id: "MouseScrollScalePage"
 	},
 	{
