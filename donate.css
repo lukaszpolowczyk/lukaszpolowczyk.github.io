@@ -177,6 +177,7 @@ input[type="checkbox"]:active {
 .donate-start-button {
 	display: block;
     	text-decoration: none;
+    	outline: none;
 }
 #donate-start-button-from-sidebar > * {
 	visibility: hidden;
