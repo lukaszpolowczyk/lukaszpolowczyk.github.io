@@ -68,7 +68,7 @@ const startDonate = ()=> {
 	const donateStartButtonEl = document.querySelector(".donate-start-button");
 	const heartXEl = document.querySelector(".heart-x");
 	
-	let delay = 1700;
+	let delay = 700;
 	if (hasAfterInstall) {
 		delay = 0;
 	}
@@ -85,7 +85,7 @@ const startDonate = ()=> {
 			if (!document.hidden) {
 				slidesEl.setAttribute("donate-mode", "true");
 			}
-		}, 2400+850);
+		}, 0);
 	}
 }
 window.addEventListener("visibilitychange", startDonate);
