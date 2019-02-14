@@ -1,0 +1,338 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Schemat rozwoju marksizmu</title>
+</head>
+
+<body>
+<script>
+const texts = {
+"m-marks": {
+  "title": "MŁODY MARKS 1844",
+  "content": `W 1844 roku niemiecki filozof i ideolog Karol Marks napisał tzw. Manuskrypty Paryskie, czyli nieodkryte aż do 1928 roku „Rękopisy ekonomiczno-filozoficzne”, w których przedstawił ideę powrotu społeczeństwa do poziomu wspólnoty pierwotnej. Należy zniszczyć Kościół, moralność, wychowanie, szkolnictwo, rodzinę oraz autorytety, czyli czynniki kulturotwórcze. Dzięki dekonstrukcji tradycyjnej kultury, która utrzymuje ludzi w systemie kapitalistycznym, możliwe będzie zlikwidowanie podziałów klasowych oraz ludzkiej żądzy posiadania. Marks rozumiał państwo jako zorganizowany aparat uciskania jednej klasy przez drugą, więc usunięcie podziałów klasowych doprowadzi do „obumarcia” państwa.`,
+  "from": [],
+  "to": []
+},
+  "marks": {
+  "title": "MARKS 1847",
+  "content": `W latach 1847–1848 Karol Marks tworzył razem z Fryderykiem Engelsem „Manifest Partii Komunistycznej”, który stał się oficjalnym programem komunistów. Za cel uznano masową rewolucję zbrojną podburzonego proletariatu w najwyżej rozwiniętych krajach Europy Zachodniej. Zindoktrynowany motłoch miał przemocą odebrać własność kapitalistom, przejąć władzę ("dyktatura proletariatu”) i w ten sposób zlikwidować podziały klasowe. W czasie wszechobecnego chaosu rządy mogliby objąć marksiści i za pomocą aparatu terroru podporządkować sobie siłą zbuntowane masy. Przemoc była nieunikniona – system socjalistyczny musi doprowadzić społeczeństwo do nędzy, a w takiej sytuacji jedynym sposobem na utrzymanie władzy jest terror. Była to wizja bardziej bezpośrednia i realistyczna (REALIZM od Engelsa) w porównaniu z dywagacjami „młodego Marksa” (UTOPIZM).`,
+  "from": [],
+  "to": []
+},
+"marksizm": {
+  "title": "MARKSIZM",
+  "content": `Klasyczny marksizm (ekonomiczny) opierał się na nierozwiązywalnym konflikcie pomiędzy robotnikami i kapitalistami, a więc wyzyskiwanymi oraz wyzyskiwaczami. Karol Marks, bazując na myśli Hegla, utworzył materializm dialektyczny, zgodnie z którym antagonistyczne materie stale się ze sobą ścierają, w wyniku czego dochodzi do powstania nowej jakości (synteza). Przełożenie tej koncepcji na sferę społeczną u Marksa poskutkowało sformułowaniem materializmu historycznego, który za źródło przemian uznaje środki i stosunki produkcji, czyli innymi słowy posiadanie dóbr. Cała historia ludzkości to nieprzerwany konflikt pomiędzy tymi, którzy posiadają (właściciele niewolników, feudałowie, kapitaliści), oraz tymi, którzy nie posiadają (niewolnicy, poddani, proletariusze). Jest to tzw. walka klas. Karol Marks był zwolennikiem determinizmu i stwierdził, że całym procesem kieruje pewna logika, w związku z czym przejście od wspólnoty pierwotnej przez niewolnictwo, feudalizm i kapitalizm musi zakończyć się finalnie transformacją w komunizm (de facto powrót do wspólnoty pierwotnej, czyli historia „zatacza koło”).`,
+  "from": [],
+  "to": []
+},
+"engels": {
+  "title": "FRYDERYK ENGELS",
+  "content": `Fryderyk Engels był bliskim przyjacielem i współpracownikiem Karola Marksa. Wraz z nim w 1848 roku wydał "Manifest Partii Komunistycznej". Współtworzył I oraz II Międzynarodówkę. Jest autorem książki "Pochodzenie rodziny, własności prywatnej i państwa" z 1884 roku, która stanowi fundament ideologii feministycznej i marksistowskiej antropologii. Engels założył bowiem, że tradycyjny system jest genetycznie wadliwy i już u swoich podstaw opiera się na przemocy wobec kobiet i dzieci ze strony patriarchalnego ojca. Jego zreformowanie nie jest możliwe, dlatego też jedynym rozwiązaniem pozostaje pełna dekonstrukcja statusu quo. Mężczyzna został utożsamiony z kapitalistą, który posiada pieniądze i władzę (własność prywatna, wpływ na kształt państwa), a kobieta z wyzyskiwanym proletariuszem. Zniszczenie tradycyjnej, monogamicznej rodziny stało się dla marksistów jednym z najważniejszych celów, ponieważ stanowiła ona fundament funkcjonowania całej struktury społecznej. "W historii za pierwszorzędny antagonizm należy uznać antagonizm między mężczyzną i kobietą w monogamicznym małżeństwie, a za pierwszorzędny ucisk - ucisk kobiety przez mężczyznę".`,
+  "from": [],
+  "to": []
+},
+"socjaldemokracja": {
+  "title": "SOCJALDEMOKRACJA 1890",
+  "content": `W 1890 roku rozpoczęła działalność SPD – Socjaldemokratyczna Partia Niemiec (wcześniej Socjaldemokratyczna Partia Robotnicza Niemiec). Socjaldemokracja to lewicowy ruch społeczny wywodzący się z środowisk robotniczych. Jej liderem był ideolog Eduard Bernstein, który postulował demokratyzację życia publicznego i zwiększenie wpływu robotników na funkcjonowanie państwa. Stworzył teorię ewolucyjną, zakładającą stopniowe przekształcanie kapitalizmu w socjalizm bez rewolucji zbrojnej, czyli konsekwentne działanie na drodze reform (REFORMIZM). Co istotne, Marks zwalczał wszystkie tendencje odrzucające przemoc, ponieważ wiedział, że w inny sposób niż terrorem nie będzie można utrzymać systemu komunistycznego (w założeniach nieproduktywnego). Skrytykował chociażby program gotajski, które przyjęły na kongresie zjednoczeniowym Socjaldemokratyczna Partia Robotnicza Niemiec oraz Powszechny Niemiecki Związek Robotniczy (jego założyciel Ferdinand Lassalle odrzucał rewolucję na rzecz strajków i reform społecznych).`,
+  "from": [],
+  "to": []
+},
+"marksizm-sowiecki": {
+  "title": "MARKSIZM SOWIECKI 1917 (MARKSIZM-LENINIZM)",
+  "content": `Reformizm, który poskutkował rozwijaniem się socjaldemokracji i odchodzeniem robotników od idei rewolucji zbrojnej, doprowadził do fiaska przewrotu w Europie Zachodniej. Włodzimierz Lenin, który zrozumiał intencje Karola Marksa, napisał w 1902 roku tekst „Co robić?”. Przekonywał w nim, że proletariat jest zbyt ograniczony, aby samodzielnie przeprowadzić rewoltę, dlatego też funkcję kierowniczą musi sprawować partia zawodowych rewolucjonistów. Dzięki agitatorom i mówcom grupa wywrotowców może podburzać masy do buntu, jednak po przewrocie musi od razu wykorzystać aparat terroru do zaprowadzenia porządku i stłumienia niepokojów wśród robotników chcących partycypować w nowym systemie (REALIZM). W 1917 roku doszło do rewolucji październikowej. Opracowany system tzw. centralizmu demokratycznego doprowadził do rządów absolutnych małych grup przywódczych, które obradowały pomiędzy posiedzeniami gremiów wybieralnych (decyzje władz wyższych były bezwzględnie obowiązujące dla władz niższych).`,
+  "from": [],
+  "to": []
+},
+"trockizm": {
+  "title": "TROCKIZM 1923",
+  "content": `Ortodoksyjny nurt marksizmu, który przeciwstawiał się imperialistycznej polityce ZSRR. Wyróżniał się wsparciem dla teorii permanentnej rewolucji. Zdaniem Trockiego w krajach zacofanych powtarzanie schematu zachodnioeuropejskiego (najpierw rewolucja burżuazyjna, a potem rozwój ruchu robotniczego) było bezcelowe. Permanentna rewolucja zakładała uczestniczenie robotników w rewolucji burżuazyjnej wymierzonej w struktury feudalne i przekształcenie jej w rewolucję socjalistyczną (również sojusz z chłopstwem). Według Trockiego Stalin podporządkował rewolucję interesowi kraju, a więc zdradził marksistowskie ideały. Trockizm odrzucał wizję industrializacji ZSRR za pomocą takich metod, jak współzawodnictwo i motywacyjny system wynagrodzeń. Zamiast tego proponował militaryzację pracy, czyli stosowanie terroru w celu zmuszenia społeczeństw do produkcji (armie pracy). W 1923 roku Trocki stanął na czele krajowej opozycji, a w 1929 został deportowany. W 1938 roku powstała IV Międzynarodówka zrzeszająca partie krytykujące sytuację w ZSRR. Między innymi w USA działała trockistowska Socjalistyczna Partia Robotnicza, której przewodniczył James Cannon. Od 1948 wystawiała ona swoich kandydatów na prezydenta (najwyższy wynik ponad 90 tysięcy głosów otrzymał Peter Camejo w 1976 roku).`,
+  "from": [],
+  "to": []
+},
+"austromarksizm-bauera": {
+  "title": "AUSTROMARKSIZM BAUERA 1918",
+  "content": `Nurt marksizmu, który był wynikiem poszukiwania trzeciej drogi pomiędzy rewolucją oraz socjaldemokratycznym reformizmem. Otto Bauer, który w 1918 roku został przywódcą Socjaldemokratycznej Partii Austrii, chciał przeprowadzenia rewolucji zbrojnej w momencie zagarnięcia przez partie lewicowe większości parlamentarnej. Strategia ta okazała się skazana na porażkę, ponieważ socjaliści tracili społeczne poparcie z powodu nieudolności swoich rządów oraz kryzysów ekonomicznych. W wyniku napięć wewnętrznych oraz rosnącego zagrożenia w kraju władzę przejęła Austriacka Partia Chrześcijańsko-Demokratyczna, zaprowadzając rządy autorytarne (kanclerza Engelberta Dollfussa). W propagandzie komunistycznej utrwaliły się już pejoratywne określenia austriackiej prawicy, takie jak: austrofaszyzm czy faszyzm klerykalny.`,
+  "from": [],
+  "to": []
+},
+"freudomarksizm-reicha": {
+  "title": "FREUDOMARKSIZM REICHA 1929",
+  "content": `W latach 20. XX wieku w środowisku psychoanalitycznym zaczął udzielać się austriacki lekarz i psychiatra Wilhelm Reich, który działał również w Komunistycznej Partii Niemiec. Interesował się popędem seksualnym, ludzkim libido oraz funkcją orgazmu. Prowadził kliniki seksuologiczne dla robotników, w których za darmo przekazywał informacje na temat edukacji seksualnej. W licznych pracach stwierdzał, że tradycyjna kultura ogranicza naturalne skłonności człowieka i prowadzi u niego do rozwoju nerwic. Rozwiązaniem miała być rewolucja seksualna, która wpłynęłaby pozytywnie na kondycję zdrowotną i psychiczną społeczeństwa. Opracował między innymi teorię, zgodnie z którą podstawową energią kosmiczną jest życiodajny Orgon, odpowiadający za tworzenie się libido. W 1927 wydał słynną książkę „Funkcja orgazmu – psychopatologia i socjologia życia płciowego”. W 1929 roku zaś, po wizycie w ZSRR, napisał pracę "Materializm Dialektyczny i Psychoanaliza". Reich, tworząc freudomarksizm, będący połączeniem nauk Freuda oraz założeń Marksa, stworzył fundament pod rewizję marksizmu (REWIZJONIZM).`,
+  "from": [],
+  "to": []
+},
+"freudomarksizm-fromma": {
+  "title": "FREUDOMARKSIZM FROMMA 1932–36",
+  "content": `W latach 1932–1936 Erich Fromm, członek szkoły frankfurckiej działającej w ramach Instytutu Badań Społecznych przy Uniwersytecie Johanna Wolfganga Goethego we Frankfurcie nad Menem, interesował się badaniami Wilhelma Reicha. Prowadził z nim nawet aktywnie spory ideologiczne. O ile Reich uznawał zniewolenie seksualne za skutek uboczny ekonomicznego ucisku, tak Fromm stwierdził, że seks jest głównym narzędziem utrzymującym ludzi w niesprawiedliwym systemie wyzysku. Innymi słowy, odwrócił jego koncepcję i postulował, aby najpierw przeprowadzić rewolucję seksualną, a dopiero później przejąć władzę przemocą. W 1936 roku wraz z innymi frankfurtczykami, a mianowicie Maxem Horkheimerem oraz Herbertem Marcuse, wydał „Studia nad autorytetem i rodziną”. W tej książce przedstawiono wizję rzeczywistości jako systemu niesprawiedliwości i przemocy, który poprzez tradycyjne wychowanie, rodzinę oraz autorytety zniewala ludzi od urodzenia i tłumi ich naturalne instynkty, aby mogli funkcjonować jak niezawodne trybiki w kapitalistycznej maszynie. W 1928 roku w archiwum Socjaldemokratycznej Partii Niemiec frankfurtczycy odkryli Manuskrypty Paryskie (Młody Marks), a 1932 roku po raz pierwszy je opublikowali. To faktyczny początek rozwoju neomarksizmu, czyli tzw. marksizmu kulturowego.`,
+  "from": [],
+  "to": []
+},
+"zachodnie-partie-komunistyczne": {
+  "title": "ZACHODNIE PARTIE KOMUNISTYCZNE",
+  "content": `W 1919 roku powstał Komintern, czyli organizacja międzynarodowa, która zrzeszała partie komunistyczne podległe ZSRR. Skupiały się na agitacjach politycznych oraz przygotowaniach do wybuchu międzynarodowej rewolucji. W latach 1935–1938 istniał Front Ludowy, w ramach którego partie komunistyczne wchodziły w sojusze z socjaldemokracją w obliczu wspólnego zagrożenia faszyzmem. Wcześniej ugrupowania socjaldemokratyczne były określane jako socjalfaszystowskie i zwalczane, jednak z powodu dojścia do władzy NSDAP w Niemczech postanowiono zawiesić spór i przeciwstawić się nowemu wrogowi (naziści zostali wrzuceni do ogólnego obozu faszystowskiego). Co istotne, za „faszystowskie” uznano wszelkie siły sprzeciwiające się komunizmowi, a więc również konserwatystów, nacjonalistów oraz monarchistów (frankiści w Hiszpanii czy środowiska narodowe w Polsce). Za propagandę w tym względzie odpowiadał komunista Grigorij Zinowjew.`,
+  "from": [],
+  "to": []
+},
+"wkp-b": {
+  "title": "WKP(b) 1925",
+  "content": `W 1903 roku z Socjaldemokratycznej Partii Robotniczej Rosji wyłoniła się frakcja bolszewicka, która po rewolucji rządziła w latach 1918–1925 jako Rosyjska Partia Komunistyczna (bolszewików). Od 1925 roku funkcjonowała jako Wszechzwiązkowa Komunistyczna Partia (bolszewików), czyli WKP(b). Po śmierci Lenina w 1924 rozpoczął się konflikt między Józefem Stalinem oraz Lwem Trockim, który zakończył się emigracją tego drugiego. Władzę przejął Stalin, zaostrzając terror i likwidując przeciwników politycznych z własnego obozu. Stalinizm zrezygnował z internacjonalistycznej rewolucji na rzecz budowy socjalizmu w jednym kraju i podporządkowywania sobie kolejnych państw w ramach imperialistycznej polityki ZSRR.`,
+  "from": [],
+  "to": []
+},
+"wschodnie-partie-kominternowskie": {
+  "title": "WSCHODNIE PARTIE KOMINTERNOWSKIE",
+  "content": `Z ZSRR współpracowały również rozmaite partie komunistyczne na Wschodzie, które przygotowywały w swoich krajach grunt pod wybuch lokalnych rewolucji i przyjęcie Armii Czerwonej. Trzeba wyszczególnić ugrupowania komunistyczne w następujących krajach: Estonii, Finlandii, Łotwie, na Ukrainie, Polsce czy na Węgrzech. Przykładowo w naszym kraju od 1918 roku działała KPRP, czyli Komunistyczna Partia Robotnicza Polski.`,
+  "from": [],
+  "to": []
+},
+"teoria-krytyczna": {
+  "title": "TEORIA KRYTYCZNA 1937–44",
+  "content": `W latach 1937–1944 członkowie szkoły frankfurckiej opracowywali teorię krytyczną, która doprowadziła do rewizji klasycznego marksizmu, czyli zmiany metod walki przy zachowaniu pierwotnych intencji Karola Marksa (totalitarny reżim). W 1937 roku Max Horkheimer wydał publikację „Teoria tradycyjna i krytyczna”, w której wyłożył podstawy teorii krytycznej. O ile w klasycznym marksizmie nierozwiązywalny konflikt dotyczył kapitalistów i robotników (sfera ekonomiczna), tak w nowej wersji marksizmu postawiono na konflikt natury i kultury. Zgodnie z tym, co opisywał Marks już w 1844 roku, neomarksistowscy ideolodzy opracowali schemat wyzwoleńczy spod jarzma opresyjnej kultury. Wszelkie tradycyjne instytucje, jak Kościół, rodzina czy szkoła, utrzymują ludzi w systemie opresji i powodują psychopatologie z powodu tłumienia u dzieci od najmłodszych lat naturalnych instynktów seksualnych. Teoria krytyczna zakłada, że system nie jest możliwy do zreformowania, ponieważ bazuje na genetycznie wadliwych fundamentach. W rezultacie jedynym wyjściem jest jego całkowita dekonstrukcja, ponieważ w innym wypadku społeczeństwo zawsze będzie w jakimś stopniu zniewalać człowieka. Teoria krytyczna zatem to nieustanne podważanie statusu quo i kwestionowanie wszystkiego, co naturalne, ogólnie przyjęte i konserwatywne. Nie ma końca, ponieważ system musi zostać zastąpiony nowym – komunistycznym. Rozwinięcie tej teorii znalazło się w kolejnych publikacjach frankfurtczyków. „Krytyka instrumentalnego rozumu" Horkheimera z 1947 roku (pierwotnie jako „Zaćmienie umysłu") została poświęcona zjawisku dostosowywania się człowieka do niesprawiedliwego systemu społecznego, którego wady wykorzystuje, aby zapewnić sobie doraźną, egoistyczną korzyść, zapominając przy tym o wartościach wyższych. Była więc to krytyka ludzi, którzy zamiast poprzeć rewolucję, zaczęli skupiać się na pracy od podstaw i zdobywaniu wykształcenia, aby własnym wysiłkiem wydobyć się z nędzy w systemie kapitalistycznego wyzysku. W „Dialektyce oświecenia" Horkheimer i Theodor Adorno (1947) opisali, do czego, ich zdaniem, doprowadził rozum instrumentalny – do wojny, ludobójstw i Holocaustu. Jako że stanowi produkt tradycyjnej kultury chrześcijańskiej, została ona uznana za czynnik rodzących w ludziach skłonności faszystowskie. Osobowość Autorytarna Theodora Adorno (1950) kontynuowała tę samą retorykę. Tym razem badacz stworzył specjalną naukową skalę F, aby klasyfikować osoby o skłonnościach faszystowskich. Ponownie była to forma stygmatyzacji przeciwników ideologicznych, którzy jako obrońcy tradycyjnej, a więc według tej retoryki autorytarnej, opresyjnej kultury, są skłonni do niebezpiecznych psychopatologii.`,
+  "from": [],
+  "to": []
+},
+"socialisme-ou-barbarie": {
+  "title": "SOCIALISME OU BARBARIE 1948",
+  "content": `Grupa francuskich komunistów, która wywodzi się z IV Międzynarodówki, czyli ruchu trockistowskiego. Tuż po wojnie w Europie, a dokładnie w 1948 roku, część marksistów opuściła tamtejszą partię trockistowską Parti Communiste Internationaliste (PCI). Intelektualiści tworzący ruch krytykowali leninizm i popierali idee anarchistyczne, a zwłaszcza tzw. komunizm radziecki (rządy rad robotniczych). Redagowali pismo pod tą samą nazwą, czyli "Socialisme ou Barbarie" (Socjalizm albo Barbarzyństwo). Zajmowali się kwestiami filozoficznymi i społecznymi. Twórcą grupy był Cornelius Castoriadis. Do ważniejszych członków należy zaliczyć Guya Deborda.`,
+  "from": [],
+  "to": []
+},
+"ventotene": {
+  "title": "VENTOTENE 1941",
+  "content": `W 1941 roku trzech komunistycznych działaczy, Altiero Spinelli, Ernesto Rossi i Eugenio Colornier, ukończyło prace nad "Manifestem z Ventotene". Publikacja powstała w czasie ich pobytu w faszystowskim więzieniu na wyspie Ventotene. Sam Alitero Spinelli został wyrzucony z Włoskiej Partii Komunistycznej za trockizm. W publikacji autorzy postulowali utworzenie jednego ponadnarodowego państwa europejskiego, które zajmowałoby się polityką międzynarodową, obronnością, gospodarką oraz finansami. Przewidywali również utworzenie wspólnej armii europejskiej, która mogłaby interweniować i pacyfikować bunty społeczne w krajach członkowskich pozbawionych armii narodowych. W 1943 roku Spinelli powołał Europejski Ruch Federalistyczny, który działał na rzecz integracji europejskiej i zlikwidowania państw narodowych. Natomiast w 1946 roku założył Unię Europejskich Federalistów, W 1970 roku został członkiem Komisji Europejskiej ( do 1976). W 1979 roku wystartował jako kandydat niezależny do Parlamentu Europejskiego na liście Włoskiej Partii Komunistycznej. Wraz z innymi politykami podzielającymi jego wizję utworzył w 1980 roku tzw. Klub Krokodyla, który zajmował się opracowywaniem konstytucji europejskiej. W 1984 roku przedstawił w Parlamencie Europejskim "Draft Treaty Establishing a European Union", czyli "Plan Spinellego", który zakładał utworzenie Unii Europejskiej. Projekt został przyjęty przez europosłów, ale wszystkie państwa członkowskie nie wyraziły zgody na jego wdrożenie w życie. W związku z tym Spinelli wybrał metodę małych kroków. W 1986 roku kraje członkowskie Europejskiej Wspólnoty Gospodarczej (EWG) podpisały Jednolity Akt Europejski, czyli umowę międzynarodową, która zmodyfikowała traktaty rzymskie z 1957 roku. Dotychczas nieformalna "Europejska Współpraca Polityczna" uzyskała prawną podstawę funkcjonowania, co poskutkowało zacieśnieniem wspólnej polityki zagranicznej krajów członkowskich.`,
+  "from": [],
+  "to": []
+},
+"kpzr": {
+  "title": "KPZR 1952",
+  "content": `W roku 1952 WKP(b) została przemianowana na Komunistyczną Partię Związku Radzieckiego, a gdy w 1953 zmarł Józef Stalin, rządy objął Nikita Chruszczow. Doprowadził on do destalinizacji, oskarżając Stalina o zerwanie z leninizmem i wypaczenie marksistowskiej idei, mimo że sam Chruszczow był przecież jednym z najważniejszych realizatorów wielkiej czystki w latach 30. XX wieku (de facto likwidacja przeciwników politycznych w obozie komunistycznym). Tym samym zliberalizował system („odwilż”). ZSRR starało się odtąd polepszać stosunki dyplomatyczne z Zachodem. Stalinizm zaś stał się symbolem kultu jednostki i zerwania z prawdziwym marksizmem. Co istotne, sam leninizm jest odpowiedzialny za śmierć co najmniej 15 milionów ludzi (krwawa rewolucja październikowa, wojna domowa, ludobójstwo Kozaków dońskich, czyli "rozkozaczanie", stłumienie powstania tambowskiego gazami bojowymi, klęska głodu w Tatarstanie w latach 1921–1922, walka z prawosławiem oraz system łagrów działający od 1918 roku).`,
+  "from": [],
+  "to": []
+},
+"wschodnie-partie-socjalistyczne": {
+  "title": "WSCHODNIE PARTIE SOCJALISTYCZNE",
+  "content": `W 1943 roku Komintern został rozwiązany przez Stalina i zastąpiony w 1947 roku Kominformem, który jednak nie odegrał większej roli. Już w 1955 roku został zastąpiony Układem Warszawskim, który skupiał państwa należące do bloku wschodniego pod egidą ZSRR. Był to sojusz wojskowy stanowiący przeciwwagę dla zachodnioeuropejskiego NATO. W Węgierskiej Republice Socjalistycznej od 1956 roku do 1989 roku rządziła Węgierska Socjalistyczna Partia Robotnicza, która powstała po krwawych czystkach i zmianach w Komunistycznej Partii Węgier. Natomiast w Polsce od 1948 władzę sprawowała Polska Zjednoczona Partia Robotnicza, która powstała w wyniku połączenia Polskiej Partii Robotniczej oraz Polskiej Partii Socjalistycznej.`,
+  "from": [],
+  "to": []
+},
+"kontrkultura-beat-generation": {
+  "title": "KONTRKULTURA BEAT GENERATION 1950",
+  "content": `Ruch tzw. beatników rozwijał się od lat 50. XX wieku w USA. Charakteryzował się buntem wobec systemu, odrzuceniem tradycyjnych norm społecznych oraz anarchicznym indywidualizmem. Kontrkulturowa młodzież otwarcie występowała przeciwko autorytetom i promowała antykonsumpcyjny styl życia. Do twórców należy zaliczyć Allena Ginsberga, krzewiciela pacyfizmu i filozofii Wschodu (buddyzm, krysznaizm), oraz Jacka Kerouaca, promującego alkohol i narkotyki do poszukiwania wyższych sensów. Członkowie ruchu poszukiwali spełnienia również w włóczęgostwie, nieskrępowanym seksie oraz awangardowej sztuce. Wiele czerpali z publikacji Wilhelma Reicha, który mieszkał w USA od początku II wojny światowej. W 1955 Herbert Marcuse ze szkoły frankfurckiej, który po II wojnie światowej pozostał na emigracji w Ameryce, napisał książkę „Eros i cywilizacja”. Argumentował w niej, że tłumienie naturalnego popędu seksualnego wśród ludzi jest celowym zabiegiem mającym na celu utrzymanie ich w systemie wydajnej, ale katorżniczej pracy. Dlatego też wzywał do uwolnienia swoich sił libidalnych i nieprzerwanej walki z opresyjnym kapitalizmem.`,
+  "from": [],
+  "to": []
+},
+"sytuacjonizm": {
+  "title": "SYTUACJONIZM 1957",
+  "content": `W 1957 roku powstała Międzynarodówka Sytuacjonistów założona przez Guya Deborda, który działał w trockistowskiej grupie Socialisme ou Barbarie. Celem sytuacjonistów było zakłócenie działania społeczeństwa w każdej jego dziedzinie. Aktywiści zajmowali się happeningami, prowokacjami i innymi publicznymi akcjami mającymi na celu wojnę komunikacyjną i kulturową z resztą społeczeństwa. Najważniejsze koncepcje sytuacjonizmu: 
+  – teoria dryfu – idea bezcelowej, irracjonalnej włóczęgi, 
+  – urbanistyka unitarna 
+  – sposób urządzenia przestrzeni miejskiej, w której niemożliwa jest celowa komunikacja, 
+  – wandalizm porównawczy – teoria oryginalnej, europejskiej kultury pogańskiej, która może zastąpić chrześcijaństwo, 
+  – wojna komunikacyjna – działania służące paraliżowanie systemu komunikacji społecznej przez odwracanie (subwersję) jej kulturowych kodów. 
+Część członków wywodziła się również z ruchu lettrystycznego zrzeszonego w Międzynarodówce Lettrystycznej (1952). Lettryzm to awangardowa poezja opierająca się na głoskach ułożonych w ciągi pozbawione sensu, czyli w praktyce bełkot. Do głównych przedstawicieli należy zaliczyć rumuńskiego rewolucjonistę Isidore Isou oraz jego głównego współpracownika, czyli francuskiego artystę Maurice Lemaître'a.`,
+  "from": [],
+  "to": []
+},
+"opozycja-anty-komunistyczna": {
+  "title": "OPOZYCJA ANTYKOMUNISTYCZNA",
+  "content": `Praktycznie od początku okupacji Europy Wschodniej w krajach podległych ZSRR rozwijały się ugrupowania opozycyjne względem Moskwy. Były one antykomunistyczne i niepodległościowe. W latach 1944–1953 w Polsce trwało powstanie antykomunistyczne, w którym brali udział żołnierze wyklęci, czyli członkowie konspiracyjnych ugrupowań wywodzących się z AK oraz środowisk narodowych (np. Narodowe Siły Zbrojne). W 1956 w Polsce doszło do tzw. Poznańskiego Czerwca, czyli protestów robotniczych, które zostały krwawo stłumione przez władzę. W 1980 roku powstał Niezależny Samorządny Związek Zawodowy „Solidarność”, który skupiał szerokie masy społeczne wrogie wobec reżimu. W 1989 pod wpływem nacisków i słabej pozycji ZSRR doszło do tzw. Okrągłego Stołu, czyli negocjacji przedstawicieli Polskiej Rzeczypospolitej Ludowej z agentami działającymi w Solidarności (Lech Wałęsa) oraz trockistowską opozycją, związaną z Kręgiem Walterowskim (później Hufiec Walterowski) powstałym w 1954 roku (Adam Michnik, Jacek Kuroń). W wyniku ugody nastąpiła transformacja ustrojowa komunizmu w demoliberalny system rynkowy z dominującą pozycją postkomunistycznych elit uwłaszczonych w czasie prywatyzacji. Wpływy zachodnie, czyli de facto neomarksistowskie, stopniowo wpływały na społeczeństwa Europy Wschodniej, które po wyzwoleniu z entuzjazmem dołączyły do Wspólnoty Europejskiej i zachłysnęły się "wolnością", "kapitalizmem" oraz "wolnym rynkiem". Europeizacja i genderyzacja młodzieży doprowadziła do rozwoju między innymi takich ugrupowań jak RAZEM.`,
+  "from": [],
+  "to": []
+},
+"kontrkultura-hippe": {
+  "title": "KONTRKULTURA HIPPIE 1965",
+  "content": `Od 1965 roku Stany Zjednoczone prowadziły działania zbrojne w Wietnamie Południowym. Spotkało się to z protestami Amerykanów. Lata 60. XX wieku to ogromny rozwój ruchu hippisowskiego, który promował pacyfizm, indywidualizm, anarchizm, feminizm, wolną miłość i emancypację środowisk homoseksualnych. Twarzą nowego ruchu, który de facto wyrósł z Beat Generation, był Timothy Leary – orędownik narkotyzacji i LSD zapewniającego głębsze życie duchowe. W 1964 roku Herbert Marcuse opublikował książkę „Człowiek jednowymiarowy”, która przyniosła mu największą sławę i sprzedała się w USA w ciągu 5 lat w nakładzie 100 tysięcy egzemplarzy. Jak przekonywał, najistotniejszy problem stanowi konsumpcjonizm typowy dla ludzi, którzy podążając za tym, co podpowiada instrumentalny rozum, wyzbywają się wyższych wartości. Wolą pogoń za dobrobytem, karierą i sławą, przez co stają się właśnie „jednowymiarowi”. Na końcu książki autor zamieścił wezwanie do Wielkiej Odmowy, czyli zbojkotowania „systemu kapitalistycznego” i jego instytucji, takich jak Kościół, szkoła czy zakład pracy. Część hipisów powróciła do normalnej społeczności, ale wielu uzależnionych od narkotyków przedawkowała ze skutkiem śmiertelnym. Rewolucja anarchistyczna zakończyła się niepowodzeniem, ponieważ zindywidualizowani hipisi nie oddziałali na większość społeczeństwa tak, jak oczekiwali tego neomarksiści.`,
+  "from": [],
+  "to": []
+},
+"nowa-lewica": {
+  "title": "NOWA LEWICA 1960",
+  "content": `Socjaldemokratyczna Partia Niemiec wykreśliła ze swojego programu marksizm w 1959 roku (program godesberski). W 1961 roku SPD wykluczyła ze współpracy swoją młodzieżową przybudówkę, czyli Socjalistyczny Związek Studentów Niemieckich. Powodem były zbyt skrajne poglądy wielu członków ugrupowania, nierzadko reprezentujące ortodoksyjne stanowisko. Od tego czasu zaczęła tworzyć się marksistowska opozycja wobec tradycyjnej lewicy. Liderem Nowej Lewicy w Niemczech został Rudi Dutschke. Na rozwój ruchu w Stanach miała wpływ grupa Beat Generation oraz jej ideolog Herbert Marcuse.`,
+  "from": [],
+  "to": []
+},
+"maoizm": {
+  "title": "MAOIZM 1966",
+  "content": `Chiński nurt marksizmu zaadaptowany do tamtejszych warunków. Maoiści akcentowali walkę zbrojną z przeciwnikami rewolucji i odrzucali pokojową drogę przekształcania społeczeństwa. Szczególną cechą myśli maoistowskiej jest uznanie sprzeczności za najważniejsze cechy społeczeństwa; wewnętrzne sprzeczności miały popychać społeczeństwo do rewolucji, która jest jedynym środkiem na usunięcie tych sprzeczności. Dla maoizmu charakterystyczne jest przeświadczenie, że przejęcie władzy przez proletariat nie kończy walki klasowej; ona trwa nadal, ale ma charakter ideologiczny, a celem komunistów jest wymazanie reakcyjnych idei oraz ich społecznych korzeni z historii i zbiorowej pamięci. W czasie wojny domowej w latach 1927–1934 Kuomintang (Chińska Partia Narodowa) zwalczał Komunistyczną Partię Chin. Najważniejszym wydarzeniem, do którego nawiązywali zachodni ideolodzy inspirujący się maoizmem, był „Długi Marsz”. W 1934 roku rewolucyjna armia Mao Zedonga wyruszyła na północ Chin w celu przegrupowania sił, przemierzając 12 tysięcy kilometrów i tracąc po drodze niemal połowę stanu osobowego. Poświęcenie żołnierzy i determinacja Mao posłużyły do stworzenia reżimowej legendy. Ostatecznie został on niekwestionowanym liderem ruchu i w 1949 po rozprawieniu się z przeciwnikami proklamował Chińską Republikę Ludową. W 1966 roku natomiast rozpoczął "Wielką Proletariacką Rewolucję Kulturalną", czyli krwawe rozprawianie się z przeciwnikami politycznymi. Zachodni fanatycy marksizmu byli pod zdumieniem dokonań Mao Zedonga.`,
+  "from": [],
+  "to": []
+},
+"opozycja-komunistyczna": {
+  "title": "OPOZYCJA KOMUNISTYCZNA",
+  "content": `Już w 1956 roku pod wpływem powstania węgierskiego przeciwko okupacji ZSRR (ponad 3 tysiące zabitych, około 15 tysięcy rannych) w Europie Zachodniej opadły entuzjastyczne nastroje społeczne. Okazało się bowiem, że sowieckie republiki nie są wcale tak pokojowe i pławiące się w luksusie. W tym samym roku Republika Federalna Niemiec (RFN) zdelegalizowała Komunistyczną Partię Niemiec. W 1959 roku Socjaldemokratyczna Partia Niemiec przyjęła tzw. program godesberski, oficjalnie (przynajmniej teoretycznie) odrzucając ideologię marksistowską. Pozbyła się również ze swoich szeregów komunistów otwarcie deklarujących swoje poglądy. Co istotne, rewolucja na Węgrzech miała charakter komunistyczny, ponieważ wywołało ją reformatorskie skrzydło Komunistycznej Partii Węgier (wówczas Węgierska Partia Pracujących). Była ona wymierzona w ZSRR i miała za zadanie wyzwolić kraj spod sowieckiej okupacji. W latach 1953–1955 premierem Węgier był Imre Nagy, którego w 1955 pozbawiono stanowiska i wyrzucono z partii. Jednak już w 1956 masowe protesty społeczne doprowadziły do ponownego objęcia przez niego funkcji premiera. W tym samym roku ogłosił wyjście Węgier z Układu Warszawskiego. Reakcja ZSRR mogła być tylko jedna.`,
+  "from": [],
+  "to": []
+},
+"pacyfizm": {
+  "title": "PACYFIZM 1969",
+  "content": `W 1969 roku odbył się pierwszy festiwal Woodstock, który przyciągnął ponad 400. tys ludzi pod hasłem „Pokój, miłość i szczęście”. Skupiał ruchy i środowiska promujące pacyfizm, nuklearne rozbrojenie, zakończenie wojny w Wietnamie, wolną miłość, narkotyki oraz alternatywne religie. Generalnie lata 60. i 70. to gwałtowny rozwój idei pacyfistycznych zarówno w USA, jak i w Europie Zachodniej, również w formie zinstytucjonalizowanej (partie polityczne). Pacyfizm jako ideologia musi doprowadzić do tego, że rozbrojone i w konsekwencji bezbronne społeczeństwo padnie ofiarą agresywnej i nienastawionej pokojowo grupy. Jednym z najbardziej znanych propagatorów pacyfizmu był muzyk John Lennon, który w 1971 wydał przebój "Imagine". Jest to utwór przedstawiający idealny system społeczny, a w rzeczywistości balladowy manifest komunistyczny nawołujący do porzucenia religii, zniesienia granic państw narodowych oraz zlikwidowania własności prywatnej (rzekomo prowadzących do wojen i cierpienia). Stanowi przystępną formę indoktrynacji młodzieży w duchu wolności, równości i pokoju.`,
+  "from": [],
+  "to": []
+},
+"paryz": {
+  "title": "PARYŻ 1968",
+  "content": `W 1968 roku ZSRR wraz z innymi państwami Układu Warszawskiego krwawo stłumiło tzw. Praską Wiosnę zgodnie z doktryną Breżniewa. Interes wspólnoty socjalistycznej, czyli w praktyce imperializmu sowieckiego, był ważniejszy niż indywidualne dążenia krajów członkowskich. Czechosłowacja nie chciała pozbyć się komunizmu, tylko wprowadzić wzory zachodnie zgodnie z nowoczesnym marksizmem kulturowym. ZSRR po prostu pozbyło się wewnętrznej opozycji. To wydarzenie wywołało różne reakcje na Zachodzie. We Francji w roku 1968 doszło do rewolty studenckiej Nowej Lewicy, której w Paryżu przewodzili sytuacjoniści Guya Deborda oraz inni radykałowie, między innymi Daniel Cohn-Bendit. W Niemczech w latach 1967–1968 trwały protesty pod egidą Rudiego Dutschke. Ważną postacią tamtych demonstracji był również Joschka Fischer. Hasło ideowe Nowej Lewicy to „Marks, Mao, Marcuse”.`,
+  "from": [],
+  "to": []
+},
+"nowa-lewica-terroryzm": {
+  "title": "NOWA LEWICA. TERRORYZM 1969",
+  "content": `Jako że rewolty studenckie nie przyniosły zamierzonych skutków i zostały stłumione przez służby porządkowe, najbardziej radykalni działacze Nowej Lewicy rozpoczęli działalność terrorystyczną. Inspirowali się zwłaszcza maoizmem czy guevaryzmem, które akcentowały walkę zbrojną z przeciwnikami rewolucji. W Niemczech Zachodnich (RFN) Frakcja Czerwonej Armii dokonała licznych zamachów bombowych i morderstw (34 osoby zabite, kilkaset rannych). Natomiast we Włoszech terror siały Czerwone Brygady, porywając znanych polityków czy napadając na banki. Ich najsłynniejszą akcją było zamordowanie premiera Włoch Aldo Moro.`,
+  "from": [],
+  "to": []
+},
+"praga": {
+  "title": "PRAGA 1968",
+  "content": `W 1968 roku doszło do tzw. Praskiej Wiosny, czyli szeregu liberalnych reform w Czechosłowacji wciąż będącej pod protektoratem ZSRR. Alexander Dubček, członek Prezydium Komitetu Centralnego Komunistycznej Partii Czechosłowacji, zapoczątkował daleko idące zmiany w kraju, doprowadzając do złagodzenia cenzury, zwiększenia wolności słowa w prasie, zmniejszenia represji ze strony służb porządkowych i przyjęcia wielu zachodnich nowinek społeczno-obyczajowych. W odpowiedzi ponad 600 tysięcy żołnierzy Układu Warszawskiego wkroczyło na teren Czechosłowacji i obaliło nową władzę. Represje sowieckie dotknęły nie tylko Dubčeka, ale i innych działaczy z jego otoczenia. Zgodnie z "doktryną Breżniewa" było to działanie usprawiedliwione, ponieważ dobro socjalistycznej wspólnoty jest ważniejsze od indywidualnych inspiracji poszczególnych państw. Socjalistyczny Związek Studentów Niemieckich, czyli młodzieżówka SPD, z którą partia rozwiązała współpracę w 1961 roku, rozpoczął protesty trwające w latach 1967–1968. Zapoczątkował on tzw. Nową Lewicę, czyli rewolucyjny, wierny marksistowskim ideałom ruch społeczno-polityczny. Na jego czele stanął Rudi Dutschke. Głównym powodem było zawiązanie przez Socjaldemokratyczną Partię Niemiec koalicji z Unią Chrześcijańsko-Demokratyczną (CDU), czyli chadecją (1966–1969). Dla Nowej Lewicy była to jawna zdrada.`,
+  "from": [],
+  "to": []
+},
+"lgbt": {
+  "title": "LGBT 1969",
+  "content": `W 1969 roku doszło do interwencji policji w gejowskim pubie Stonewall w Nowym Jorku, co po-skutkowało wybuchem zamieszek. Wydarzenie odbiło się szerokim echem w całych Stanach i bardzo mocno wpłynęło na wzrost aktywności ruchów homoseksualnych. W tym samym roku powstał Gay Liberation Front, a w późniejszym czasie kolejne organizacje. LGBT bazuje na ideologii neomarksistowskiej i akcentuje konflikt pomiędzy heteroseksualistami i nieheteroseksualistami. Ci drudzy są ofiarą opresyjnego systemu, który musi zostać zmieniony, aby zakończyć prześladowania i dyskryminację. Pierwszą organizację na rzecz praw homoseksualistów Scientific-Humanitarian Committee w 1897 roku założył niemiecki seksuolog Magnus Hirschfeld, twórca Instytutu Seksuologicznego, w którym doradzał pacjentom i prowadził badania. Jest twórcą teorii metatropizmu, zgodnie z którą płeć jest czymś zmiennym i znajduje się na skali (de facto prekursor ideologii Gender). Przeprowadzał pierwsze operacje zmiany płci i promował transwestytyzm jako normalne zachowanie seksualne. Z Instytutem byli związani również znani filozofowie i ideolodzy, którzy fascynowali się dokonaniami Hirschfelda, chociażby Walter Benjamin czy Ernst Bloch – obaj powiązani ze szkołą frankfurcką. Najpewniej frankfurtczycy czerpali swoje inspiracje przy tworzeniu koncepcji rewolucji seksualnej właśnie z prac powstających w berlińskim instytucie (oczywiście oprócz książek Reicha i Fromma). `,
+  "from": [],
+  "to": []
+},
+"marsz-przez-instytucje": {
+  "title": "MARSZ PRZEZ INSTYTUCJE 1973",
+  "content": `W latach 70. XX wieku Nowa Lewica dostrzegła, że przejęcie władzy ulicznymi zamieszkami i terroryzmem nie jest możliwe ze względu na zdecydowany opór społeczeństw i służb porządkowych. 1973 rok przyjmuje się za datę wygaśnięcia ruchu w dotychczasowej formie. Najważniejszy postulat, który zarekomendował lider ugrupowania Rudi Dutschke, to zaczerpnięta wprost od frankfurtczyków idea "Długiego marszu przez instytucje". Polegała ona na powolnym, ale systematycznym wnikaniu lewicowych aktywistów do wszystkich instytucji społecznych, począwszy od szkół i uniwersytetów, kończąc na administracji publicznej i środkach masowego przekazu. Aktywiści Nowej Lewicy inspirowali się również tekstami włoskiego komunisty Antonio Gramsciego, który przedstawił teorię hegemonii kulturowej. Twierdził on, że system kapitalistyczny może utrzymać się głównie dzięki temu, że wspierają go zarówno władza polityczna, jak i kulturowa (metapolityczna). W związku z tym postulował przede wszystkim zawłaszczenie instytucji opiniotwórczych, czyli takich, które kreują opinię publiczną: szkół, uniwersytetów, kościołów czy mediów. Przyjęcie nowej strategii pociągnęło za sobą wdrożenie odmiennych technik oddziaływania na społeczeństwo. Już w 1965 roku Herbert Marcuse ze szkoły frankfurckiej napisał esej "Tolerancja represywna" skierowany do grona swoich studentów na Brandeis University w Waltham w stanie Massachusetts. Argumentował w nim, że tradycyjnie rozumiana tolerancja jest szkodliwa i niewystarczająca. Stwierdził, skądinąd zgodnie z założeniami teorii krytycznej, że taka postawa przyzwalania na pewne zachowania, z którymi i tak się nie zgadzamy, jest fałszywa i ogranicza wolność mniejszości do poziomu wyznaczanego przez dominującą większość. W związku z tym jest to system wadliwy, którego zreformować się nie da, a więc należy go zniszczyć. Marcuse wyraził wprost, że trzeba przyjąć nową wersję tolerancji, a mianowicie tolerancję represywną, w myśl której nie można tolerować zwykłej tolerancji, czyli ukrytej nietolerancji. Wyrażając się jaśniej, przewidywał tolerancję dla postępowej lewicy i nietolerancję dla reakcyjnej prawicy. Stworzył mechanizm represjonowania ludzi myślących w odmienny sposób, tj. sprzeciwiających się postulatom neomarksizmu, poprzez ich stałą stygmatyzację w przestrzeni medialnej, uniwersyteckiej czy religijnej. Jego teoria została przejęta przez aktywistów w latach 60. i do dziś jest realizowana w ramach wspomnianego już „Długiego marszu przez instytucje”. Stanowiła uzupełnienie wcześniejszych nauk szkoły frankfurckiej oraz hegemonii kulturowej Gramsciego. Ostatnie ogniwo wniósł rumuński psycholog i komunista Serge Moscovici, który we Francji przeprowadzał badania z zakresu psychologii grupowej i opisywał metody wpływania zorganizowanych, konsekwentnych mniejszości na większość społeczeństwa.`,
+  "from": [],
+  "to": []
+},
+"gender": {
+  "title": "GENDER 1975",
+  "content": `Od 1951 roku nowozelandzki seksuolog John Money pracował na Johns Hopkins University w Baltimore w Stanach Zjednoczonych. W swoich badaniach zajmował się kwestią płci. Wprowadził do przestrzeni naukowej pojęcia: tożsamość płciowa, rola społeczna, parafilia (zamiast perwersji) oraz orientacja seksualna (zamiast preferencji seksualnej). Zajmował się również koncepcją "Bodymind", analizując wpływ umysłu na ciało (w dalszym rozwinięciu płeć wynika z mózgu). W 1965 roku założył placówkę Johns Hopkins Gender Identity Clinic, która od 1966 roku zaczęła wykonywać operacje zmiany płci. W 1967 roku do Moneya zgłosili się rodzice małego chłopca, którego penis uległ uszkodzeniu w wyniku błędu lekarskiego w czasie usuwania stulejki. Zgodzili się na eksperymentalne leczenie, które polegało na usunięciu jąder ich syna, kuracjach hormonalnych i rozmaitych operacjach plastycznych. David Reimer stał się Brendą i zaczął być wychowywany jako dziewczynka. W tym czasie jego zdrowy brat bliźniak również był monitorowany, aby porównać u nich ewentualne różnice rozwojowe i wychowawcze. John Money przedstawiał wyniki leczenia w pismach naukowych i udowadniał, że kwestie biologiczne wcale nie determinują płci człowieka. W 1975 roku niemiecka feministka Alice Schwarzer wydała książkę "Mała różnica i jej ogromne konsekwencje", w której nagłośniła sukces Moneya i całej ideologii Gender. W 1980 roku David popadł w straszną depresję i próbował popełnić samobójstwo. Wtedy też rodzice wyjawili mu prawdę. Chłopak zdecydował się na kurację hormonalną i operacje chirurgiczne, które w jakimś stopniu pozwoliły mu powrócić do swojej płci. W 1990 roku ożenił się i adoptował dzieci swojej żony. W 1997 roku zdecydował się upublicznić swoją historię w mediach. Niestety w 2004 popełnił samobójstwo, strzelając sobie w głowę. Przyczyną była narastająca depresja. Dwa lata wcześniej, w 2002 roku, z powodu przedawkowania leków na schizofrenię zmarł jego brat bliźniak Brian. Traktat amsterdamski, który został podpisany w 1997 roku przez kraje Wspólnoty Europejskiej, zobowiązał je do przyjęcia strategii politycznej "Gender mainstreaming". Umowa międzynarodowa weszła w życie w 1999 roku. Innymi słowy, Gender jest oficjalną ideologią Unii Europejskiej, a od 1995 roku również Organizacji Narodów Zjednoczonych (ONZ). Za swoją działalność w 2002 roku Money otrzymał Medal im. Magnusa Hirschfelda od najstarszego i najbardziej renomowanego stowarzyszenia seksuologicznego w Europie German Society for Social-Scientific Sexuality Research.`,
+  "from": [],
+  "to": []
+},
+"eurokomunizm": {
+  "title": "EUROKOMUNIZM 1975",
+  "content": `W połowie lat 70. XX wieku część partii komunistycznych w Europie Zachodniej odcięła się od wpływów sowieckich z powodu krytyki ZSRR ze strony międzynarodowej opinii publicznej. Eurokomunizm jako nurt zakładał utworzenie niezależnego centrum komunizmu w Europie i rehabilitację idei marksistowskich. W 1975 roku wydano tzw. Manifest eurokomunizmu, który zakładał działanie partii komunistycznych w ramach demokracji parlamentarnej. W latach 70. we Włoszech Chrześcijańska Demokracja współpracowała z Włoską Partią Komunistyczną i dzięki poparciu komunistów sprawowała rządy w latach 1976–1979. Liberalne prądy w chadecji doprowadziły do kompromitacji ruchu i spadku jego popularności. Podobnie w Niemczech Unia Chrześcijańsko-Demokratyczna (CDU) wielokrotnie wchodziła w koalicje z Socjaldemokratyczną Partią Niemiec (SPD), która dopiero w 1959 wykreśliła ze swojego programu marksizm (najbardziej znany rząd 1966–1969). Liberalne oraz marksistowskie prądy całkowicie "zblatowały" chadecję, która obecnie nie ma nic wspólnego z katolicką wizją świata i hołduje antywartościom.`,
+  "from": [],
+  "to": []
+},
+"zieloni": {
+  "title": "ZIELONI 1980",
+  "content": `W 1980 roku w Republice Federalnej Niemiec powstała partia polityczna Zieloni, którą założyli znani lewicowi aktywiści lat 60. Należy wymienić takie postaci, jak: Joschka Fischer (uczestnik zamieszek w Niemczech w latach 1967–1968), Rudolf Bahro (do 1956 roku zwolennik polityki Lenina i Stalina) czy Joseph Beuys (performer i twórca koncepcji "plastyki społecznej", zgodnie z którą artysta musi oddziaływać na społeczeństwo i je zmieniać). Ugrupowanie skupiło się na walce o sprawiedliwość społeczną, ekologiczne rozwiązania w gospodarce, pacyfizm oraz powszechne rozbrojenie nuklearne. W 1984 roku Zieloni dostali się do Parlamentu Europejskiego i rozpoczęli współpracę z innymi ugrupowaniami z tego nurtu (notabene to właśnie niemieccy Zieloni wpłynęli na powstanie podobnych ugrupowań chociażby w Hiszpanii czy we Włoszech). W swoim programie mocno wspierali środowiska LGBT i proponowali nawet dekryminalizację dobrowolnych stosunków seksualnych pomiędzy dorosłymi i dziećmi (de facto pedofilia). Pod wpływem licznych skandali, między innymi z Danielem Cohn-Benditem (przyjacielem Joschki Fischera), który fantazjował o intymnych relacjach z małymi dziewczynkami, w 1987 wykreślono z programu partii postulaty pedofilskie. W 1990 roku, już po upadku Muru Berlińskiego, doszło do połączenia Zielonych ze Związkiem 90 z Niemieckiej Republiki Demokratycznej (NRD). Od 1998 do 2005 Związek 90/Zieloni tworzył koalicję rządową z Socjaldemokratyczną Partią Niemiec. Związek 90/Zieloni jest partią członkowską Europejskiej Partii Zielonych, natomiast w Parlamencie Europejskim jej posłowie należą do grupy Zieloni/WSE. Wspomniany Daniel Cohn-Bendit współtworzy Grupę Spinelli.`,
+  "from": [],
+  "to": []
+},
+"antykultura": {
+    "title": "ANTYKULTURA 1993",
+    "content": `W 1992 roku został podpisany Traktat z Maastricht (Traktat o Unii Europejskiej), który nieformalnie ustanowił ramy Unii Europejskiej. EWG została przekształcona we Wspólnotę Europejską. Pozostałe filary, które wtedy utworzono na podstawie traktatu, to: Współpraca policyjna i sądowa w sprawach karnych oraz Wspólna polityka zagraniczna i bezpieczeństwa. Umowa zaczęła oficjalnie działać od 1993 roku. W 2007 roku kraje członkowskie podpisały Traktat Lizboński, który wszedł w życie w 2009 roku. Zniósł on trzy dotychczasowe filary i utworzył jednolitą Unię Europejską. Co istotne, w dalszym ciągu jest to organizacja międzynarodowa, która zrzesza formalnie suwerenne państwa. Nadal nie została przyjęta europejska konstytucja, która doprowadziłaby do utworzenia jednego organizmu państwowego. Od 2010 w Parlamencie Europejskim działa Grupa Spinelli, która na ten moment zrzesza już ponad 110 europarlamentarzystów. Do organizacji należą między innymi: Guy Verhofstadt, Daniel Cohn-Bendit, ale również Róża Thun und Hohenstein oraz Danuta Hübner z Platformy Obywatelskiej. Projekt współtworzą zarówno chadecy, liberałowie i ludowcy, jak i socjaliści, zieloni czy komuniści, a więc pełen przekrój europejskiej polityki. Już w 2015 roku szef Komisji Europejskiej Jean-Claude Juncker zaapelował, aby utworzyć jednolitą armię europejską. Cel jest jeden: Europa bez granic, bez armii narodowych, bez własnych walut i całkowicie uzależniona od Brukseli. W 2017 roku Komisja Europejska wydała oficjalny dokument pt.: "Biała Księga w sprawie przyszłości Europy", w którym to "Manifest z Ventotene" został wskazany jako jedyny fundament programowy i źródło inspiracji dla współczesnej Unii Europejskiej.`,
+  "from": [],
+  "to": []
+},
+"wzor": {
+  "title": "",
+  "content": ``,
+  "from": [],
+  "to": []
+},
+};
+</script>
+<map name="m">
+<area shape="rect" coords="176, 15, 259, 44" id="m-marks">
+<area shape="rect" coords="195, 71, 236, 98" id="marks">
+<area shape="rect" coords="186, 113, 245, 132" id="marksizm">
+<area shape="rect" coords="278, 68, 326, 89" id="engels">
+<area shape="rect" coords="55, 95, 172, 123" id="socjaldemokracja">
+<area shape="rect" coords="324, 140, 383, 181" id="marksizm-sowiecki">
+<area shape="rect" coords="167, 170, 227, 200" id="trockizm">
+<area shape="rect" coords="46, 123, 144, 165" id="austromarksizm-bauera">
+<area shape="rect" coords="46, 200, 148, 239" id="freudomarksizm-reicha">
+<area shape="rect" coords="43, 258, 152, 299" id="freudomarksizm-fromma">
+<area shape="rect" coords="234, 199, 335, 231" id="zachodnie-partie-komunistyczne">
+<area shape="rect" coords="340, 200, 385, 229" id="wkp-b">
+<area shape="rect" coords="399, 200, 471, 256" id="wschodnie-partie-kominternowskie">
+<area shape="rect" coords="43, 314, 150, 342" id="teoria-krytyczna">
+<area shape="rect" coords="147, 342, 222, 381" id="socialisme-ou-barbarie">
+<area shape="rect" coords="230, 305, 299, 334" id="ventotene">
+<area shape="rect" coords="331, 366, 368, 397" id="kpzr">
+<area shape="rect" coords="373, 332, 470, 376" id="wschodnie-partie-socjalistyczne">
+<area shape="rect" coords="44, 361, 146, 400" id="kontrkultura-beat-generation">
+<area shape="rect" coords="207, 386, 294, 420" id="sytuacjonizm">
+<area shape="rect" coords="399, 394, 463, 452" id="opozycja-anty-komunistyczna">
+<area shape="rect" coords="52, 423, 141, 466" id="kontrkultura-hippe">
+<area shape="rect" coords="167, 409, 211, 450" id="nowa-lewica">
+<area shape="rect" coords="265, 466, 309, 496" id="maoizm">
+<area shape="rect" coords="314, 453, 413, 486" id="opozycja-komunistyczna">
+<area shape="rect" coords="85, 509, 145, 540" id="pacyfizm">
+<area shape="rect" coords="160, 492, 225, 512" id="paryz">
+<area shape="rect" coords="241, 508, 318, 550" id="nowa-lewica-terroryzm">
+<area shape="rect" coords="338, 506, 382, 535" id="praga">
+<area shape="rect" coords="159, 525, 194, 558" id="lgbt">
+<area shape="rect" coords="71, 565, 150, 608" id="marsz-przez-instytucje">
+<area shape="rect" coords="161, 582, 210, 614" id="gender">
+<area shape="rect" coords="243, 585, 333, 617" id="eurokomunizm">
+<area shape="rect" coords="137, 622, 184, 650" id="zieloni">
+<area shape="rect" coords="172, 664, 269, 699" id="antykultura">
+</map>
+<div id="container">
+<img usemap="#m" src="https://i.imgur.com/VBfLQnz.jpg">
+<div id="border"></div>
+</div>
+<div>
+  <div id="id"></div>
+  <div id="title">Wybierz węzeł na mapce, żeby zobaczyć opis.</div>
+  <div id="content"></div>
+</div>
+<style>
+body {
+  display: flex;
+  margin-top: 50px;
+}
+img {
+  width: 500px;
+  height: 716px;
+}
+#container {
+  position: relative;
+  width: 500px;
+  height: 716px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+area {
+  cursor: pointer;
+}
+#title {
+  font-weight: bold;
+}
+#content {
+  white-space: pre-wrap;
+}
+#border {
+  position: absolute;
+  display: none;
+  border: 2px solid #6e9eff;
+  pointer-events: none;
+  border-radius: 6px;
+  background-color: rgba(110, 158, 255, 0.2);
+}
+</style>
+<script>
+
+const mapEl = document.querySelector("map");
+mapEl.addEventListener("click", (event)=>{
+  const id = event.target.id;
+  document.querySelector("#id").textContent =  id;
+
+  const title = texts[id].title;
+  const content = texts[id].content;
+  
+  document.querySelector("#title").textContent = title;
+  document.querySelector("#content").textContent = content;
+  
+  document.querySelector("#border").style.display = "block";
+  const coords = event.target.attributes.coords.value.split(",");
+  document.querySelector("#border").style.left = coords[0] +"px";
+  document.querySelector("#border").style.top = coords[1] +"px";
+  document.querySelector("#border").style.width = coords[2] - coords[0] +"px";
+  document.querySelector("#border").style.height = coords[3] - coords[1] +"px";
+  
+});
+</script>
+</body>
+</html>
