@@ -126,8 +126,7 @@ const texts = {
   "title": "SYTUACJONIZM 1957",
   "content": `W 1957 roku powstała Międzynarodówka Sytuacjonistów założona przez Guya Deborda, który działał w trockistowskiej grupie Socialisme ou Barbarie. Celem sytuacjonistów było zakłócenie działania społeczeństwa w każdej jego dziedzinie. Aktywiści zajmowali się happeningami, prowokacjami i innymi publicznymi akcjami mającymi na celu wojnę komunikacyjną i kulturową z resztą społeczeństwa. Najważniejsze koncepcje sytuacjonizmu: 
   – teoria dryfu – idea bezcelowej, irracjonalnej włóczęgi, 
-  – urbanistyka unitarna 
-  – sposób urządzenia przestrzeni miejskiej, w której niemożliwa jest celowa komunikacja, 
+  – urbanistyka unitarna – sposób urządzenia przestrzeni miejskiej, w której niemożliwa jest celowa komunikacja, 
   – wandalizm porównawczy – teoria oryginalnej, europejskiej kultury pogańskiej, która może zastąpić chrześcijaństwo, 
   – wojna komunikacyjna – działania służące paraliżowanie systemu komunikacji społecznej przez odwracanie (subwersję) jej kulturowych kodów. 
 Część członków wywodziła się również z ruchu lettrystycznego zrzeszonego w Międzynarodówce Lettrystycznej (1952). Lettryzm to awangardowa poezja opierająca się na głoskach ułożonych w ciągi pozbawione sensu, czyli w praktyce bełkot. Do głównych przedstawicieli należy zaliczyć rumuńskiego rewolucjonistę Isidore Isou oraz jego głównego współpracownika, czyli francuskiego artystę Maurice Lemaître'a.`,
@@ -283,7 +282,7 @@ body {
   display: flex;
   margin-top: 50px;
   flex-grow: 1;
-justify-content: center;
+  justify-content: center;
   
 }
 img {
@@ -313,8 +312,8 @@ area {
   pointer-events: none;
   border-radius: 6px;
   background-color: rgba(110, 158, 255, 0.2);
+  transition: all 0.41s cubic-bezier(.31,.3,0,1) 0s;
 }
-
 #right {
   flex-grow: 1;
   flex-basis: 100%;
@@ -324,7 +323,7 @@ area {
 <script>
 
 const mapEl = document.querySelector("map");
-mapEl.addEventListener("click", (event)=>{
+mapEl.addEventListener("mousedown", (event)=>{
   const id = event.target.id;
   document.querySelector("#id").textContent =  id;
 
