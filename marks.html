@@ -269,7 +269,7 @@ Część członków wywodziła się również z ruchu lettrystycznego zrzeszoneg
 <area shape="rect" coords="137, 622, 184, 650" id="zieloni">
 <area shape="rect" coords="172, 664, 269, 699" id="antykultura">
 </map>
-<div id="container">
+<div id="left">
 <img usemap="#m" src="https://i.imgur.com/VBfLQnz.jpg">
 <div id="border"></div>
 </div>
@@ -279,19 +279,18 @@ Część członków wywodziła się również z ruchu lettrystycznego zrzeszoneg
   <div id="content"></div>
 </div>
 <style>
-html {
-  display: flex;
-  justify-content: center;
-}
 body {
   display: flex;
   margin-top: 50px;
+  flex-grow: 1;
+justify-content: center;
+  
 }
 img {
   width: 500px;
   height: 716px;
 }
-#container {
+#left {
   position: relative;
   width: 500px;
   height: 716px;
@@ -317,6 +316,8 @@ area {
 }
 
 #right {
+  flex-grow: 1;
+  flex-basis: 100%;
   max-width: 1000px;
 }
 </style>
