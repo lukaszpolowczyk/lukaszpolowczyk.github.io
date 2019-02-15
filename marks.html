@@ -320,6 +320,7 @@ area {
 #right {
   flex-grow: 1;
   max-width: 1000px;
+  min-width: 450px;
   margin-right: auto;
 }
 </style>
@@ -327,6 +328,7 @@ area {
 
 const mapEl = document.querySelector("map");
 mapEl.addEventListener("mousedown", (event)=>{
+  if (event.button != 0) { return false; }
   const id = event.target.id;
   document.querySelector("#id").textContent =  id;
 
