@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Test bg</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+	<div class="content">
+		
+		<div style="display: flex; flex-direction: column;">
+		<label>Szerokość treści<input type="text" id="content-width"></label>
+		<label>Kolor tła<input type="text" id="bg-color"></label>
+		<hr>
+		<label>Wzór lewy<input type="text" id="bg-patter-url-left"></label>
+		<label>Kwadraty lewe<input type="text" id="bg-patter-url-right"></label>
+		<label>Wzór prawy<input type="text" id="bg-squares-url-left"></label>
+		<label>Kwadraty prawe<input type="text" id="bg-squares-url-right"></label>
+		<label>Odbicie lewej strony po prawej stronie<input type="checkbox" id="mirror"></label>
+		<hr>
+		
+		<label>Przejście(gradient) włączenie<input type="checkbox" id="bg-fade-color"></label>
+		<label>Start przejścia<input type="text" id="bg-fade-width-start"></label>
+		<label>Koniec przejścia<input type="text" id="bg-fade-width-end"></label>
+		<hr>
+		<label>Przejście(gradient) przy krawędzi ekranu<input type="checkbox" id="bg-fade-point"></label>
+		<label>Szerokość marginesu od krawędzi<input type="text" id="screen-edge-margin-width"></label>
+		<hr>
+		<label>Wypełnienie przestrzeni po lewej i prawej (powtarzanie)<input type="checkbox" id="bg-repeat"></label>
+		<hr><br>
+		<label>Rozmiar tła<input type="text" id="bg-pattern-size"></label>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br> to jest przykładowa wycięta grafika wzoru, nie jest taka jak być powinna.<br>
+		<br> 1. można ustawić odbicie lustrzane lub osobny lewy i prawy wzór
+		<br> 2. potrzeba ustalać kolor tła i szerokość treści za pomocą zmiennych css --content-width i--bg-color, bo tło z nich korzysta
+		<br> 3.a potrzeba grafiki z powtarzającym się wzorem
+		<br> 3.b ta grafika może być bez przejścia(bez gradientu), bo zrobiłem że można przejście ustawić w zmiennych css
+		<br> 3.c szerokość wzoru może wypełniać całą przestrzeń po lewej i prawej strony treści, lub być tylko przy krawędzi ekranu
+		<br> 3.d do tego można ustawić przejście (gradient): przy krawędzi ekranu lub przy krawędzi treści strony
+		<br> 5.a można ustawić grafikę z czarnymi kwadratami osobno, jako warstwę nad wzorem
+		<br> 5.b tę grafikę można ustawić dłuższą niż wzór, żeby było mniej powtarzalnie. ale musi być wielokrotnością wysokości wzoru, żeby się wpasować
+		
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
