@@ -18,7 +18,7 @@
 		<label>Wzór prawy<input type="text" id="bg-patter-url-right"></label>
 		<label>Kwadraty lewe<input type="text" id="bg-squares-url-left"></label>
 		<label>Kwadraty prawe<input type="text" id="bg-squares-url-right"></label>
-		<label>Odbicie lustrzane lewych grafik na prawej stronie<input type="checkbox" id="mirror">(gdy odznaczone, potrzeba osobnych grafik dla prawej strony)</label>
+		<label>Odbicie lustrzane lewych grafik na prawej stronie<input type="checkbox" id="mirror">(gdy odznaczone, potrzeba/można użyć osobnych grafik dla prawej strony)</label>
 		<hr>
 		
 		<label>Przejście(gradient) włączenie<input type="checkbox" id="bg-fade-color"></label>
@@ -30,8 +30,6 @@
 				<option value=" var(--content-edge)">na krawędzi treści</option>
 			</select></label>
 		<label>Szerokość marginesu od krawędzi ekranu<input type="text" id="screen-edge-margin-width"></label>
-		<hr>
-		<label>Wypełnienie wzorem w poziomie (powtarzanie wzoru w poziomie)<input type="checkbox" id="bg-repeat"></label>
 		<hr><br>
 		<label>Rozmiar/skala tła
 			<select id="bg-pattern-size" size="3">
@@ -39,6 +37,8 @@
 			<option value=" var(--screen-edge-margin-width)">skalowanie do szerokości jak "szerokość marginesu od krawędzi" (można użyć gdy gradient przy krawędzi ekranu)</option>
 			<option value=" calc(100% - var(--content-edge))">skalowanie do szerokości przestrzeni (można użyć gdy gradient na krawędzi treści)</option>
 		 </select></label>
+		<hr>
+		<label>Wypełnienie wzorem w poziomie (powtarzanie wzoru w poziomie)<input type="checkbox" id="bg-repeat"></label>
 		</div>
 		<br>
 		<br>
