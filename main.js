@@ -66,6 +66,21 @@ ns.forEach((name)=>{
 		document.querySelector(`#${name}`).checked = false;
 	}
 })();
+(()=>{
+	const name = "bg-pattern-size";
+	const value1 = getComputedStyle(document.body).getPropertyValue(`--${name}`);
+	const value2 = getComputedStyle(document.body).getPropertyValue(`--screen-edge-margin-width`);
+	
+	if (value1.includes(document.querySelector(`#${name}`).options[0].value)) {
+		document.querySelector(`#${name}`).options[0].selected = "selected";
+	} else
+	if (value1.includes(value2)) {
+		document.querySelector(`#${name}`).options[1].selected = "selected";
+	} else
+	if (value1.includes("calc(100% -")) {
+		document.querySelector(`#${name}`).options[2].selected = "selected";
+	}
+})();
 
 document.querySelector(`#${ns[0]}`).addEventListener("change", (event)=>changeVariable(ns[0], event.target.value));
 document.querySelector(`#${ns[1]}`).addEventListener("change", (event)=>changeVariable(ns[1], event.target.value));

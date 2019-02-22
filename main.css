@@ -25,6 +25,9 @@
 	/* fill left and right spaces */
 	--bg-repeat: repeat; /* repeat-y is no fill spaces | repeat is fill spaces */
 	
+	/* original size or scale to pattern width (set in --screen-edge-margin-width) or scale to spaces width */
+	--bg-pattern-size: auto; /* options: auto | var(--screen-edge-margin-width) | calc(100% - var(--content-edge))  */
+	
 	/* leave as it is */
 	--content-edge: calc(var(--content-width) / 2);
 	--screen-edge-margin: calc(100% - var(--screen-edge-margin-width, 100px));
@@ -32,7 +35,6 @@
 	--bg-fade-end: calc(var(--bg-fade-point) + (var(--bg-fade-width-end, 0) / 2));
 	
 	--bg-side-width: 50%;
-	--bg-pattern-size: auto;
 }
 
 html {

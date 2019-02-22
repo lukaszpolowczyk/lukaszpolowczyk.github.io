@@ -30,7 +30,12 @@
 		<hr>
 		<label>Wypełnienie wzorem w poziomie (powtarzanie wzoru w poziomie)<input type="checkbox" id="bg-repeat"></label>
 		<hr><br>
-		<label>Rozmiar tła<input type="text" id="bg-pattern-size"></label>
+		<label>Rozmiar/skala tła
+			<select id="bg-pattern-size" size="3">
+			<option value=" auto">oryginalny rozmiar wzoru, bez skalowania (można użyć gdy gradient przy krawędzi ekranu lub na krawędzi treści)</option>
+			<option value=" var(--screen-edge-margin-width)">skalowanie do szerokości jak "szerokość marginesu od krawędzi" (można użyć gdy gradient przy krawędzi ekranu)</option>
+			<option value=" calc(100% - var(--content-edge))">skalowanie do szerokości przestrzeni (można użyć gdy gradient na krawędzi treści)</option>
+		 </select></label>
 		</div>
 		<br>
 		<br>
