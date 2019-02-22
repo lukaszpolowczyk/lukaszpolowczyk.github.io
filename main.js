@@ -53,9 +53,11 @@ ns.forEach((name)=>{
 	
 	if (value1.includes(value2)) {
 		document.querySelector(`#${name}`).options[0].selected = "selected";
+		document.querySelector(`#screen-edge-margin-width`).removeAttribute("disabled");
 	}
 	if (value1.includes(value3)) {
 		document.querySelector(`#${name}`).options[1].selected = "selected";
+		document.querySelector(`#screen-edge-margin-width`).setAttribute("disabled", "disabled");
 	}
 })();
 (()=>{
@@ -109,13 +111,19 @@ document.querySelector(`#bg-fade-color`).addEventListener("change", (event)=>{
 		changeVariable("bg-fade-color", "transparent");
 	}
 });
-/*document.querySelector(`#bg-fade-point`).addEventListener("change", (event)=>{
-	if (event.target.checked) {
-		changeVariable("bg-fade-point", "var(--screen-edge-margin)");
-	} else {
-		changeVariable("bg-fade-point", "var(--content-edge)");
+document.querySelector(`#bg-fade-point`).addEventListener("change", (event)=>{
+	const value1 = event.target.value;
+	const value2 = "var(--screen-edge-margin)";
+	const value3 = "var(--content-edge)";
+	
+	console.log("val1", value1, value2, value3);
+	if (value1.includes(value2)) {
+		document.querySelector(`#screen-edge-margin-width`).removeAttribute("disabled");
+	} else
+	if (value1.includes(value3)) {
+		document.querySelector(`#screen-edge-margin-width`).setAttribute("disabled", "disabled");
 	}
-});*/
+});
 document.querySelector(`#bg-repeat`).addEventListener("change", (event)=>{
 	if (event.target.checked) {
 		changeVariable("bg-repeat", "repeat");
