@@ -25,8 +25,11 @@
 		<label>Start przejścia<input type="text" id="bg-fade-width-start"></label>
 		<label>Koniec przejścia<input type="text" id="bg-fade-width-end"></label>
 		<hr>
-		<label>Przejście(gradient) przy krawędzi ekranu<input type="checkbox" id="bg-fade-point"> (odznaczone oznacza gradient na krawędzi treści)</label>
-		<label>Szerokość marginesu od krawędzi<input type="text" id="screen-edge-margin-width"></label>
+		<label>Przejście(gradient) <select id="bg-fade-point" size="2">
+				<option value=" var(--screen-edge-margin)">przy krawędzi ekranu</option>
+				<option value=" var(--content-edge)">na krawędzi treści</option>
+			</select></label>
+		<label>Szerokość marginesu od krawędzi ekranu<input type="text" id="screen-edge-margin-width"></label>
 		<hr>
 		<label>Wypełnienie wzorem w poziomie (powtarzanie wzoru w poziomie)<input type="checkbox" id="bg-repeat"></label>
 		<hr><br>

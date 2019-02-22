@@ -13,7 +13,8 @@ const ns = [
 	"bg-squares-url-right",
 	"bg-fade-width-start",
 	"bg-fade-width-end",
-	"bg-pattern-size"
+	"bg-pattern-size",
+	"bg-fade-point"
 ];
 
 ns.forEach((name)=>{
@@ -47,12 +48,14 @@ ns.forEach((name)=>{
 (()=>{
 	const name = "bg-fade-point";
 	const value1 = getComputedStyle(document.body).getPropertyValue(`--${name}`);
+	const value2 = getComputedStyle(document.body).getPropertyValue(`--screen-edge-margin`);
+	const value3 = getComputedStyle(document.body).getPropertyValue(`--content-edge`);
 	
-	console.log("value1",value1,  " var(--screen-edge-margin)", value1 == " var(--screen-edge-margin)");
-	if (value1.includes("calc(100% -")) {
-		document.querySelector(`#${name}`).checked = true;
-	} else {
-		document.querySelector(`#${name}`).checked = false;
+	if (value1.includes(value2)) {
+		document.querySelector(`#${name}`).options[0].selected = "selected";
+	}
+	if (value1.includes(value3)) {
+		document.querySelector(`#${name}`).options[1].selected = "selected";
 	}
 })();
 (()=>{
@@ -106,13 +109,13 @@ document.querySelector(`#bg-fade-color`).addEventListener("change", (event)=>{
 		changeVariable("bg-fade-color", "transparent");
 	}
 });
-document.querySelector(`#bg-fade-point`).addEventListener("change", (event)=>{
+/*document.querySelector(`#bg-fade-point`).addEventListener("change", (event)=>{
 	if (event.target.checked) {
 		changeVariable("bg-fade-point", "var(--screen-edge-margin)");
 	} else {
 		changeVariable("bg-fade-point", "var(--content-edge)");
 	}
-});
+});*/
 document.querySelector(`#bg-repeat`).addEventListener("change", (event)=>{
 	if (event.target.checked) {
 		changeVariable("bg-repeat", "repeat");
@@ -125,4 +128,5 @@ document.querySelector(`#${ns[7]}`).addEventListener("change", (event)=>changeVa
 document.querySelector(`#${ns[8]}`).addEventListener("change", (event)=>changeVariable(ns[8], event.target.value));
 
 document.querySelector(`#${ns[9]}`).addEventListener("change", (event)=>changeVariable(ns[9], event.target.value));
+document.querySelector(`#${ns[10]}`).addEventListener("change", (event)=>changeVariable(ns[10], event.target.value));
 
