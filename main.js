@@ -35,17 +35,6 @@ ns.forEach((name)=>{
 	}
 })();
 (()=>{
-	const name = "bg-fade-color";
-	const value1 = getComputedStyle(document.body).getPropertyValue(`--${name}`);
-	
-	console.log("value1",value1,  " var(--bg-color)", value1 == " var(--bg-color)");
-	if (value1 == " transparent") {
-		document.querySelector(`#${name}`).checked = false;
-	} else {
-		document.querySelector(`#${name}`).checked = true;
-	}
-})();
-(()=>{
 	const name = "bg-fade-point";
 	const value1 = getComputedStyle(document.body).getPropertyValue(`--${name}`);
 	const value2 = getComputedStyle(document.body).getPropertyValue(`--screen-edge-margin`);
@@ -58,6 +47,30 @@ ns.forEach((name)=>{
 	if (value1.includes(value3)) {
 		document.querySelector(`#${name}`).options[1].selected = "selected";
 		document.querySelector(`#screen-edge-margin-width`).setAttribute("disabled", "disabled");
+	}
+})();
+(()=>{
+	const name = "bg-fade-color";
+	const value1 = getComputedStyle(document.body).getPropertyValue(`--${name}`);
+	
+	console.log("value1",value1,  " var(--bg-color)", value1 == " var(--bg-color)");
+	if (value1 == " transparent") {
+		document.querySelector(`#${name}`).checked = false;
+		document.querySelector(`#bg-fade-width-start`).setAttribute("disabled", "disabled");
+		document.querySelector(`#bg-fade-width-end`).setAttribute("disabled", "disabled");
+		document.querySelector(`#bg-fade-point`).setAttribute("disabled", "disabled");
+		document.querySelector(`#screen-edge-margin-width`).setAttribute("disabled", "disabled");
+	} else {
+		document.querySelector(`#${name}`).checked = true;
+		document.querySelector(`#bg-fade-width-start`).removeAttribute("disabled");
+		document.querySelector(`#bg-fade-width-end`).removeAttribute("disabled");
+		document.querySelector(`#bg-fade-point`).removeAttribute("disabled");
+
+		const value1 = document.querySelector(`#bg-fade-point`).value;
+		const value2 = "var(--screen-edge-margin)";
+		if (value1.includes(value2)) {
+			document.querySelector(`#screen-edge-margin-width`).removeAttribute("disabled");
+		}
 	}
 })();
 (()=>{
@@ -107,8 +120,21 @@ document.querySelector(`#mirror`).addEventListener("change", (event)=>{
 document.querySelector(`#bg-fade-color`).addEventListener("change", (event)=>{
 	if (event.target.checked) {
 		changeVariable("bg-fade-color", "var(--bg-color)");
+		document.querySelector(`#bg-fade-width-start`).removeAttribute("disabled");
+		document.querySelector(`#bg-fade-width-end`).removeAttribute("disabled");
+		document.querySelector(`#bg-fade-point`).removeAttribute("disabled");
+
+		const value1 = document.querySelector(`#bg-fade-point`).value;
+		const value2 = "var(--screen-edge-margin)";
+		if (value1.includes(value2)) {
+			document.querySelector(`#screen-edge-margin-width`).removeAttribute("disabled");
+		}
 	} else {
 		changeVariable("bg-fade-color", "transparent");
+		document.querySelector(`#bg-fade-width-start`).setAttribute("disabled", "disabled");
+		document.querySelector(`#bg-fade-width-end`).setAttribute("disabled", "disabled");
+		document.querySelector(`#bg-fade-point`).setAttribute("disabled", "disabled");
+		document.querySelector(`#screen-edge-margin-width`).setAttribute("disabled", "disabled");
 	}
 });
 document.querySelector(`#bg-fade-point`).addEventListener("change", (event)=>{
