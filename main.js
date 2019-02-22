@@ -1,6 +1,8 @@
 function changeVariable (name, value) {
 	console.log(value);
 	document.documentElement.style.setProperty(`--${name}`, value);
+	
+	document.querySelector("#css-vars").textContent = `html{${document.documentElement.getAttribute("style")}}`;
 }
 
 const ns = [
@@ -135,3 +137,14 @@ document.querySelector(`#${ns[8]}`).addEventListener("change", (event)=>changeVa
 document.querySelector(`#${ns[9]}`).addEventListener("change", (event)=>changeVariable(ns[9], event.target.value));
 document.querySelector(`#${ns[10]}`).addEventListener("change", (event)=>changeVariable(ns[10], event.target.value));
 
+
+
+document.querySelector(`#css-vars`).addEventListener("click", (event)=>{
+	const range = document.createRange();
+	range.selectNode(document.getElementById("css-vars"));
+	window.getSelection().removeAllRanges();
+	window.getSelection().addRange(range);
+
+	/* Copy the text inside the text field */
+	document.execCommand("copy");
+})
